@@ -11,6 +11,7 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 alias ps='ps -f'
+alias vdiff='vim -d'
 
 ### Paths.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
