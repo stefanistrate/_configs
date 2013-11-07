@@ -75,7 +75,7 @@ Bundle 'L9'
 Bundle 'Valloric/MatchTagAlways'
 
 Bundle 'scrooloose/nerdtree'
-autocmd vimenter * NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
 
 Bundle 'Lokaltog/powerline'
 set runtimepath+=~/.vim/bundle/powerline/powerline/bindings/vim/
