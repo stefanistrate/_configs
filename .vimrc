@@ -44,9 +44,10 @@ set nolist " Display unprintable characters.
 set listchars=tab:·\ ,eol:¶,trail:·,extends:»,precedes:« " Unprintable chars.
 
 set foldenable " Enable folding.
-set foldmethod=indent " Indent folding.
+set foldmethod=syntax " Syntax based folding.
+set foldnestmax=4 " Maximum nesting of folds.
 set foldcolumn=5
-set foldlevel=1
+autocmd Syntax * normal zR
 
 set mouse=a " Enable mouse.
 
