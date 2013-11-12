@@ -53,6 +53,9 @@ set mouse=a " Enable mouse.
 
 set splitbelow
 set splitright
+
+set wildmenu " Enable better command completion.
+set wildmode=list:longest
 """ }}}
 
 """ Commands {{{

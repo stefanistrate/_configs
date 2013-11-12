@@ -30,7 +30,7 @@ export HISTCONTROL=ignoreboth # No duplicates or lines starting with space.
 export HISTFILESIZE=1073741824
 export HISTSIZE=1048576
 shopt -s histappend # Append to the history file, don't overwrite it.
-export PROMPT_COMMAND="${PROMPT_COMMAND}; history -a; history -n" # Sync.
+export PROMPT_COMMAND="${PROMPT_COMMAND}; history -a" # Save command history.
 bind '"\e[A":history-search-backward' 2>/dev/null # Backward history navigation.
 bind '"\e[B":history-search-forward' 2>/dev/null # Forward history navigation.
 
