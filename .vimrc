@@ -71,6 +71,7 @@ call vundle#rc()
 " Required!
 Bundle 'gmarik/vundle'
 
+Bundle 'vim-jp/cpp-vim'
 Bundle 'cscope.vim'
 Bundle 'EasyGrep'
 Bundle 'FuzzyFinder'
@@ -94,6 +95,7 @@ set background=dark
 set t_Co=256
 colorscheme solarized
 
+Bundle 'octol/vim-cpp-enhanced-highlight'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
 
