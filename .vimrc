@@ -2,6 +2,12 @@
 """ Author: Stefan Istrate
 """
 
+""" Google only {{{
+if filereadable(expand('~/.vimrc.google'))
+  source ~/.vimrc.google
+endif
+""" }}}
+
 """ General {{{
 set nocompatible " Disable vi compatibility.
 set history=1024 " Number of items to remember in history.
@@ -99,9 +105,11 @@ Bundle 'octol/vim-cpp-enhanced-highlight'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
 
-Bundle 'Valloric/YouCompleteMe'
-let g:ycm_global_ycm_extra_conf=
-  \ '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+if filereadable(expand('~/.vimrc.google')) != 1 " Non-Google only.
+  Bundle 'Valloric/YouCompleteMe'
+  let g:ycm_global_ycm_extra_conf=
+      \ '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+endif
 
 filetype plugin indent on " Required!
 """ }}}

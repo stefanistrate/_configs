@@ -41,6 +41,6 @@ bind '"\e[A":history-search-backward' 2>/dev/null # Backward history navigation.
 bind '"\e[B":history-search-forward' 2>/dev/null # Forward history navigation.
 
 ### Google only.
-if [ -f ~/.at_google ]; then
-  source ~/.at_google
+if [ -f ~/.profile.google ]; then
+  source ~/.profile.google
 fi
