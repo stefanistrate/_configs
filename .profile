@@ -19,7 +19,8 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 ### Paths.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:\
+/opt/local/bin:/opt/local/sbin:$PATH
 
 ### Visual.
 # Update the values of LINES and COLUMNS after the window size has changed.
