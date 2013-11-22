@@ -13,6 +13,11 @@ alias fgrep='fgrep --color=auto'
 alias ps='ps -f'
 alias vdiff='vim -d'
 
+### Bash completion.
+if [ -f /etc/bash_completion ]; then
+  . /etc/bash_completion
+fi
+
 ### Paths.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
