@@ -93,7 +93,11 @@ set runtimepath+=~/.vim/bundle/powerline/powerline/bindings/vim/
 set laststatus=2 " Show the status line.
 
 Bundle 'sudo.vim'
+
 Bundle 'scrooloose/syntastic'
+let g:syntastic_cpp_checkers=['cpplint']
+let g:syntastic_python_checkers=['pylint']
+
 Bundle 'tComment'
 
 Bundle 'altercation/vim-colors-solarized.git'
