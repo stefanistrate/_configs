@@ -42,8 +42,8 @@ set sidescrolloff=7  " Show context to the left/right of the cursor.
 set sidescroll=1  " Scroll horizontally 1 position at a time.
 set showmatch  " Show matching brackets.
 
-set nolist  " Display unprintable characters.
-set listchars=tab:·\ ,eol:¶,trail:·,extends:»,precedes:«  " Unprintable chars.
+set list  " Display unprintable characters.
+set listchars=tab:·\ ,trail:·,extends:»,precedes:«  " Unprintable chars.
 
 set foldenable  " Enable folding.
 set foldmethod=syntax  " Syntax based folding.
