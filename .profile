@@ -1,8 +1,16 @@
 # Copyright 2013 Stefan Istrate.
 
 # Aliases. {{{
-alias ls='ls -FG'
+case "$OSTYPE" in
+  darwin*)
+    alias ls='ls -FG'
+    ;;
+  linux*)
+    alias ls='ls -F --color=auto'
+    ;;
+esac
 alias ll='ls -l'
+alias la='ls -lA'
 
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
