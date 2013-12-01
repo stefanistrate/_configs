@@ -4,6 +4,8 @@
 set nocompatible  " Disable vi compatibility.
 set history=1024  " Number of items to remember in history.
 set clipboard=unnamedplus  " Copy to/from the system clipboard.
+set undolevels=1000  " 1000 undos.
+set updatecount=100  " Write the swap file to disk after typing 100 characters.
 
 set hlsearch  " Highlight search.
 set ignorecase  " Case insensitive matching.
@@ -13,7 +15,7 @@ set incsearch  " Show the match while typing.
 
 " Formatting. {{{
 set nowrap
-set whichwrap+=<,>,h,l  " Left/right keys navigation.
+set whichwrap+=<,>,[,]  " Left/right keys navigation.
 set backspace=indent,eol,start  " More powerful backspacing.
 
 set tabstop=2  " The default tabstop.
@@ -35,7 +37,9 @@ set ruler  " Show ruler.
 set title  " Let vim set the title of the window.
 set cursorline  " Highlight the current line.
 set colorcolumn=81  " Highlight the length limit of code lines.
-set scrolloff=3  " Show some context before and after the cursor.
+set scrolloff=3  " Show context before/after the cursor.
+set sidescrolloff=7  " Show context to the left/right of the cursor.
+set sidescroll=1  " Scroll horizontally 1 position at a time.
 set showmatch  " Show matching brackets.
 
 set nolist  " Display unprintable characters.
@@ -54,6 +58,8 @@ set splitright
 
 set wildmenu  " Enable better command completion.
 set wildmode=list:longest
+
+set lazyredraw
 " }}}
 
 " Commands. {{{
