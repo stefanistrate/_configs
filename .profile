@@ -1,8 +1,6 @@
-###
-### Author: Stefan Istrate
-###
+# Copyright 2013 Stefan Istrate.
 
-### Aliases.
+# Aliases. {{{
 alias ls='ls -FG'
 alias ll='ls -l'
 
@@ -12,17 +10,20 @@ alias fgrep='fgrep --color=auto'
 
 alias ps='ps -f'
 alias vdiff='vim -d'
+# }}}
 
-### Bash completion.
+# Paths. {{{
+export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:\
+/opt/local/bin:/opt/local/sbin:$PATH
+# }}}
+
+# Bash completion. {{{
 if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
+# }}}
 
-### Paths.
-export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:\
-/opt/local/bin:/opt/local/sbin:$PATH
-
-### Visual.
+# Visual. {{{
 # Update the values of LINES and COLUMNS after the window size has changed.
 shopt -s checkwinsize
 
@@ -30,17 +31,20 @@ shopt -s checkwinsize
 if [ -f ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh ]; then
   source ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh
 fi
+# }}}
 
-### History.
-export HISTCONTROL=ignoreboth # No duplicates or lines starting with space.
+# History. {{{
+export HISTCONTROL=ignoreboth  # No duplicates or lines starting with space.
 export HISTFILESIZE=1073741824
 export HISTSIZE=1048576
-shopt -s histappend # Append to the history file, don't overwrite it.
-export PROMPT_COMMAND="${PROMPT_COMMAND}; history -a" # Save command history.
-bind '"\e[A":history-search-backward' 2>/dev/null # Backward history navigation.
-bind '"\e[B":history-search-forward' 2>/dev/null # Forward history navigation.
+shopt -s histappend  # Append to the history file, don't overwrite it.
+export PROMPT_COMMAND="${PROMPT_COMMAND}; history -a"  # Save command history.
+bind '"\e[A":history-search-backward' 2>/dev/null  # Backward history search.
+bind '"\e[B":history-search-forward' 2>/dev/null  # Forward history search.
+# }}}
 
-### Google only.
-if [ -f ~/.profile.google ]; then
-  source ~/.profile.google
+# Local settings. {{{
+if [ -f ~/.profile.local ]; then
+  source ~/.profile.local
 fi
+# }}}
