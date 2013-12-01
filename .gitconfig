@@ -4,7 +4,7 @@
 	name = Ștefan Istrate
 	email = stefan.istrate@gmail.com
 [credential]
-	helper = osxkeychain
+	helper = "case \"$OSTYPE\" in darwin*) osxkeychain ;; *) ;; esac"
 [diff]
 	tool = diffmerge
 [difftool "diffmerge"]
