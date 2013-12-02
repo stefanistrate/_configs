@@ -93,6 +93,7 @@ set laststatus=2  " Show the status line.
 Bundle 'sudo.vim'
 
 Bundle 'scrooloose/syntastic'
+let g:syntastic_cpp_cpplint_exec = 'cpplint'
 let g:syntastic_cpp_checkers=['cpplint']
 let g:syntastic_python_checkers=['pylint']
 
@@ -109,6 +110,7 @@ Bundle 'tpope/vim-fugitive'
 
 if filereadable(expand('~/.at_google')) != 1  " Non-Google only.
   Bundle 'Valloric/YouCompleteMe'
+  let g:ycm_register_as_syntastic_checker = 0
   let g:ycm_global_ycm_extra_conf=
       \ '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 endif
