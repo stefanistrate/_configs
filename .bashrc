@@ -17,12 +17,13 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 alias ps='ps -f'
-alias vdiff='vim -d'
 # }}}
 
 # Paths. {{{
-export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:\
-/opt/local/bin:/opt/local/sbin:$PATH
+PATH=/usr/bin:/bin:/usr/sbin:/sbin
+PATH=/usr/local/bin:${PATH}  # Local binaries overwrite system binaries.
+PATH=${PATH}:/opt/local/bin:/opt/local/sbin  # Optional binaries come last.
+export PATH
 # }}}
 
 # Bash completion. {{{
@@ -52,7 +53,7 @@ bind '"\e[B":history-search-forward' 2>/dev/null  # Forward history search.
 # }}}
 
 # Local settings. {{{
-if [ -f ~/.profile.local ]; then
-  source ~/.profile.local
+if [ -f ~/.bashrc.local ]; then
+  source ~/.bashrc.local
 fi
 # }}}
