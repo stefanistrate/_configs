@@ -25,7 +25,13 @@ set expandtab  " Make tabs into spaces.
 set smarttab  " Smarter tab levels.
 
 set autoindent
-set cindent
+autocmd FileType c,cpp,java setlocal cindent
+autocmd FileType c,cpp,java setlocal cinoptions+=j1
+autocmd FileType c,cpp,java setlocal cinoptions+=+2s
+autocmd FileType c,cpp,java setlocal cinoptions+=g1
+autocmd FileType c,cpp,java setlocal cinoptions+=h1
+autocmd FileType c,cpp,java setlocal cinoptions+=(0
+autocmd FileType c,cpp,java setlocal cinoptions+=l1
 
 syntax on  " Enable syntax.
 filetype plugin indent on  " Detect file types.
@@ -63,7 +69,7 @@ set lazyredraw
 " }}}
 
 " Commands. {{{
-let mapleader = ','
+let mapleader=','
 " }}}
 
 " Vundle plugins. {{{
@@ -93,8 +99,6 @@ set laststatus=2  " Show the status line.
 Bundle 'sudo.vim'
 
 Bundle 'scrooloose/syntastic'
-let g:syntastic_cpp_cpplint_exec = 'cpplint'
-let g:syntastic_cpp_checkers=['cpplint']
 let g:syntastic_python_checkers=['pylint']
 
 Bundle 'tComment'
@@ -110,7 +114,6 @@ Bundle 'tpope/vim-fugitive'
 
 if filereadable(expand('~/.at_google')) != 1  " Non-Google only.
   Bundle 'Valloric/YouCompleteMe'
-  let g:ycm_register_as_syntastic_checker = 0
   let g:ycm_global_ycm_extra_conf=
       \ '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 endif
