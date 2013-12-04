@@ -68,10 +68,6 @@ set wildmode=list:longest
 set lazyredraw
 " }}}
 
-" Commands. {{{
-let mapleader=','
-" }}}
-
 " Vundle plugins. {{{
 filetype off  " Required!
 
@@ -88,9 +84,7 @@ Bundle 'FuzzyFinder'
 Bundle 'gsearch'
 Bundle 'L9'
 Bundle 'Valloric/MatchTagAlways'
-
 Bundle 'scrooloose/nerdtree'
-autocmd vimenter * if !argc() | NERDTree | endif
 
 Bundle 'Lokaltog/powerline'
 set runtimepath+=~/.vim/bundle/powerline/powerline/bindings/vim/
@@ -119,6 +113,21 @@ if filereadable(expand('~/.at_google')) != 1  " Non-Google only.
 endif
 
 filetype plugin indent on  " Required!
+" }}}
+
+" Commands. {{{
+let mapleader=','
+
+" Jump to the symbol definition / declaration.
+nnoremap <silent> <Leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
+" Toggle highlight search.
+nnoremap <silent> <Leader>h :set hlsearch!<CR>
+" Toggle NERDTree window.
+nnoremap <silent> <Leader>n :NERDTreeToggle<CR>
+" Toggle paste mode.
+nnoremap <silent> <Leader>p :set paste!<CR>
+" Toggle spell checking.
+nnoremap <silent> <Leader>s :set invspell<CR>
 " }}}
 
 " Local settings. {{{
