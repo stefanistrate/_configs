@@ -93,6 +93,8 @@ set laststatus=2  " Show the status line.
 Bundle 'sudo.vim'
 
 Bundle 'scrooloose/syntastic'
+let g:syntastic_check_on_open=1
+let g:syntastic_aggregate_errors=1
 let g:syntastic_cpp_cpplint_exec='cpplint'
 let g:syntastic_cpp_checkers=['gcc', 'cpplint']
 let g:syntastic_python_checkers=['pylint']
