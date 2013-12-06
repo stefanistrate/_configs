@@ -105,6 +105,11 @@ colorscheme solarized
 Bundle 'octol/vim-cpp-enhanced-highlight'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
+Bundle 'xolox/vim-misc'
+
+Bundle 'xolox/vim-session'
+let g:session_autoload='no'
+let g:session_autosave='no'
 
 if filereadable(expand('~/.at_google')) != 1  " Non-Google only.
   Bundle 'Valloric/YouCompleteMe'
@@ -118,16 +123,21 @@ filetype plugin indent on  " Required!
 " Commands. {{{
 let mapleader=','
 
+" Comment/Uncomment lines.
+noremap <silent> <Leader>c :TComment<CR>
 " Jump to the symbol definition / declaration.
 nnoremap <silent> <Leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " Toggle highlight search.
 nnoremap <silent> <Leader>h :set hlsearch!<CR>
-" Toggle NERDTree window.
-nnoremap <silent> <Leader>n :NERDTreeToggle<CR>
 " Toggle paste mode.
 nnoremap <silent> <Leader>p :set paste!<CR>
 " Toggle spell checking.
 nnoremap <silent> <Leader>s :set invspell<CR>
+" Toggle NERDTree window.
+nnoremap <silent> <Leader>t :NERDTreeToggle<CR>
+" Open/Save the default session.
+nnoremap <silent> <Leader><Leader>o :OpenSession default<CR>
+nnoremap <silent> <Leader><Leader>s :SaveSession default<CR>
 " }}}
 
 " Local settings. {{{
