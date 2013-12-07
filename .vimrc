@@ -10,7 +10,7 @@
 " General. {{{
 set nocompatible  " Disable vi compatibility.
 set history=1024  " Number of items to remember in history.
-set clipboard=unnamedplus  " Copy to/from the system clipboard.
+set clipboard=unnamed  " Copy to/from the system clipboard.
 set undolevels=1000  " 1000 undos.
 set updatecount=100  " Write the swap file to disk after typing 100 characters.
 
