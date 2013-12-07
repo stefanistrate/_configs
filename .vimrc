@@ -70,6 +70,7 @@ Bundle 'vim-jp/cpp-vim'
 Bundle 'cscope.vim'
 Bundle 'EasyGrep'
 Bundle 'FuzzyFinder'
+Bundle 'L9'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'scrooloose/nerdtree'
 
