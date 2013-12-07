@@ -1,4 +1,11 @@
 " Copyright 2013 Stefan Istrate.
+"
+" Configure Vim with the following features:
+"   --enable-cscope
+"   --enable-gui=no
+"   --enable-pythoninterp=yes
+"   --enable-python3interp=yes
+"   --with-features=huge
 
 " General. {{{
 set nocompatible  " Disable vi compatibility.
