@@ -18,33 +18,15 @@ set hlsearch  " Highlight search.
 set ignorecase  " Case insensitive matching.
 set smartcase  " Be case sensitive when there's a capital letter.
 set incsearch  " Show the match while typing.
-" }}}
 
-" Formatting. {{{
-set nowrap
 set whichwrap+=<,>,[,]  " Left/right keys navigation.
 set backspace=indent,eol,start  " More powerful backspacing.
 
-set tabstop=2  " The default tabstop.
-set softtabstop=2
-set shiftwidth=2  " The default shift width for indents.
-set expandtab  " Make tabs into spaces.
-set smarttab  " Smarter tab levels.
-
-set autoindent
-autocmd FileType c,cpp,java setlocal cindent
-autocmd FileType c,cpp,java setlocal cinoptions+=j1
-autocmd FileType c,cpp,java setlocal cinoptions+=+2s
-autocmd FileType c,cpp,java setlocal cinoptions+=g1
-autocmd FileType c,cpp,java setlocal cinoptions+=h1
-autocmd FileType c,cpp,java setlocal cinoptions+=(0
-autocmd FileType c,cpp,java setlocal cinoptions+=l1
-
 syntax on  " Enable syntax.
-filetype plugin indent on  " Detect file types.
 " }}}
 
 " Visual. {{{
+set nowrap  " No text wrapping.
 set number  " Enable line numbers.
 set ruler  " Show ruler.
 set title  " Let vim set the title of the window.
@@ -129,7 +111,7 @@ if filereadable(expand('~/.at_google')) != 1  " Non-Google only.
   let g:ycm_register_as_syntastic_checker=0
 endif
 
-filetype plugin indent on  " Required!
+filetype plugin indent on  " Required! Detect file types.
 " }}}
 
 " Commands. {{{
