@@ -7,7 +7,7 @@ setlocal indentexpr=GetGooglePythonIndent(v:lnum)
 
 let s:maxoff=50  " Maximum number of lines to look backwards.
 
-function GetGooglePythonIndent(lnum)
+function! GetGooglePythonIndent(lnum)
 
   " Indent inside parentheses. Align with the open parenthesis unless it is at
   " the end of the line.
