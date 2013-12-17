@@ -107,6 +107,7 @@ if filereadable(expand('~/.at_google')) != 1  " Non-Google only.
   let g:ycm_global_ycm_extra_conf=
       \ '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
   let g:ycm_register_as_syntastic_checker=0
+  let g:ycm_autoclose_preview_window_after_completion=1
 endif
 
 filetype plugin indent on  " Required! Detect file types.
