@@ -37,7 +37,7 @@ bind '"\e[B":history-search-forward' 2>/dev/null  # Forward history search.
 # }}}
 
 # Bash completion. {{{
-if [ -f /etc/bash_completion ]; then
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
   . /etc/bash_completion
 fi
 # }}}
