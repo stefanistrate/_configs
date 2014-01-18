@@ -6,6 +6,7 @@
 www.facebook.com##A[id="trending_reminders_link"]
 www.facebook.com##DIV[id="pagelet_ego_pane"]
 www.facebook.com##DIV[id="pagelet_ego_pane_w"]
+www.facebook.com##DIV[id="pagelet_trending_tags_and_topics"]
 www.facebook.com##DIV[id="trending_reminders_dialog"]
 www.facebook.com##DIV[id^="friendlist_source_suggestions_"]
 www.facebook.com##DIV[id^="newsstand_ego_subsection_"]
