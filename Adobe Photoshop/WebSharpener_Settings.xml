@@ -15,8 +15,8 @@
     <usmthreshold>5</usmthreshold>
     <edgeblur>0.5</edgeblur>
     <layeropacity>35</layeropacity>
-    <usewatermark>0</usewatermark>
-    <watermarkpath/>
+    <usewatermark>1</usewatermark>
+    <watermarkpath>/data/portfolio/watermarks/white-7pt.psd</watermarkpath>
     <watermarkopacity>75</watermarkopacity>
     <watermarkpos>2</watermarkpos>
   </preset>
@@ -36,8 +36,8 @@
     <usmthreshold>5</usmthreshold>
     <edgeblur>0.5</edgeblur>
     <layeropacity>35</layeropacity>
-    <usewatermark>0</usewatermark>
-    <watermarkpath></watermarkpath>
+    <usewatermark>1</usewatermark>
+    <watermarkpath>/data/portfolio/watermarks/white-7pt.psd</watermarkpath>
     <watermarkopacity>75</watermarkopacity>
     <watermarkpos>2</watermarkpos>
   </preset>
@@ -57,8 +57,8 @@
     <usmthreshold>5</usmthreshold>
     <edgeblur>0.5</edgeblur>
     <layeropacity>35</layeropacity>
-    <usewatermark>0</usewatermark>
-    <watermarkpath></watermarkpath>
+    <usewatermark>1</usewatermark>
+    <watermarkpath>/data/portfolio/watermarks/white-7pt.psd</watermarkpath>
     <watermarkopacity>75</watermarkopacity>
     <watermarkpos>2</watermarkpos>
   </preset>
@@ -78,8 +78,8 @@
     <usmthreshold>5</usmthreshold>
     <edgeblur>0.5</edgeblur>
     <layeropacity>35</layeropacity>
-    <usewatermark>0</usewatermark>
-    <watermarkpath></watermarkpath>
+    <usewatermark>1</usewatermark>
+    <watermarkpath>/data/portfolio/watermarks/white-7pt.psd</watermarkpath>
     <watermarkopacity>75</watermarkopacity>
     <watermarkpos>2</watermarkpos>
   </preset>
