@@ -6,7 +6,7 @@ if [ -f ~/.bashrc ]; then
 fi
 # }}}
 
-# Local settings. {{{
+# Local settings to overwrite general settings. {{{
 if [ -f ~/.profile.local ]; then
   source ~/.profile.local
 fi

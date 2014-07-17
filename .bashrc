@@ -52,7 +52,7 @@ if [ -f ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh ]; then
 fi
 # }}}
 
-# Local settings. {{{
+# Local settings to overwrite general settings. {{{
 if [ -f ~/.bashrc.local ]; then
   source ~/.bashrc.local
 fi

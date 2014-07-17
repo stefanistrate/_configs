@@ -110,9 +110,7 @@ if filereadable(expand('~/.at_google')) != 1  " Non-Google only.
 endif
 
 call vundle#end()  " Required!
-filetype plugin indent on  " Required! Detect file types.
-
-colorscheme solarized  " Enable the solarized color scheme after vundle#end().
+colorscheme solarized  " Enable the solarized colors after plugins are loaded.
 " }}}
 
 " Commands. {{{
@@ -135,8 +133,12 @@ nnoremap <silent> <Leader><Leader>o :OpenSession default<CR>
 nnoremap <silent> <Leader><Leader>s :SaveSession default<CR>
 " }}}
 
-" Local settings. {{{
+" Local settings to overwrite general settings. {{{
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+" }}}
+
+" Final settings. {{{
+filetype plugin indent on  " Detect file types.
 " }}}
