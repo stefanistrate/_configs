@@ -60,57 +60,59 @@ set lazyredraw
 " Vundle plugins. {{{
 filetype off  " Required!
 
-set runtimepath+=~/.vim/bundle/vundle/
-call vundle#rc()
+set runtimepath+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " Required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'vim-jp/cpp-vim'
-Bundle 'cscope.vim'
-Bundle 'EasyGrep'
-Bundle 'FuzzyFinder'
-Bundle 'L9'
-Bundle 'Valloric/MatchTagAlways'
-Bundle 'scrooloose/nerdtree'
+Plugin 'vim-jp/cpp-vim'
+Plugin 'cscope.vim'
+Plugin 'EasyGrep'
+Plugin 'FuzzyFinder'
+Plugin 'L9'
+Plugin 'Valloric/MatchTagAlways'
+Plugin 'scrooloose/nerdtree'
 
-Bundle 'Lokaltog/powerline'
+Plugin 'Lokaltog/powerline'
 set runtimepath+=~/.vim/bundle/powerline/powerline/bindings/vim/
 set laststatus=2  " Show the status line.
 
-Bundle 'sudo.vim'
+Plugin 'sudo.vim'
 
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 let g:syntastic_check_on_open=1
 let g:syntastic_aggregate_errors=1
 let g:syntastic_cpp_cpplint_exec='cpplint'
 let g:syntastic_cpp_checkers=['gcc', 'cpplint']
 let g:syntastic_python_checkers=['pylint']
 
-Bundle 'tComment'
+Plugin 'tComment'
 
-Bundle 'altercation/vim-colors-solarized.git'
+Plugin 'altercation/vim-colors-solarized.git'
 set background=dark
 set t_Co=256
-colorscheme solarized
 
-Bundle 'octol/vim-cpp-enhanced-highlight'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'xolox/vim-misc'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'xolox/vim-misc'
 
-Bundle 'xolox/vim-session'
+Plugin 'xolox/vim-session'
 let g:session_autoload='no'
 let g:session_autosave='no'
 
 if filereadable(expand('~/.at_google')) != 1  " Non-Google only.
-  Bundle 'Valloric/YouCompleteMe'
+  Plugin 'Valloric/YouCompleteMe'
   let g:ycm_global_ycm_extra_conf=
       \ '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
   let g:ycm_register_as_syntastic_checker=0
   let g:ycm_autoclose_preview_window_after_completion=1
 endif
 
+call vundle#end()  " Required!
 filetype plugin indent on  " Required! Detect file types.
+
+colorscheme solarized  " Enable the solarized color scheme after vundle#end().
 " }}}
 
 " Commands. {{{
