@@ -17,7 +17,7 @@ facebook.com###interestsNav
 facebook.com###listsNav
 facebook.com###pagesNav
 ! Facebook suggestions.
-facebook.com##.home_right_column .ego_column.egoOrganicColumn
+facebook.com###rightCol .ego_column.egoOrganicColumn
 facebook.com##.rhc .ego_column.egoOrganicColumn
 ! Facebook related content.
 facebook.com##div[id^="substream_"] > div > div > div > .mbm > ._4_ck
