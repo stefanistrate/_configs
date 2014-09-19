@@ -21,6 +21,7 @@ facebook.com###rightCol .ego_column.egoOrganicColumn
 facebook.com##.rhc .ego_column.egoOrganicColumn
 ! Facebook related content.
 facebook.com##div[id^="substream_"] > div > div > div > .mbm > ._4_ck
+facebook.com##div[id^="substream_"] ._2bex > .mbm > ._4_ck
 ! Facebook news feed.
 facebook.com##div[id^="topnews_main_stream_"]
 ! <-----
