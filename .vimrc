@@ -47,6 +47,7 @@ set foldcolumn=5
 autocmd Syntax * normal zR
 
 set mouse=a  " Enable mouse.
+set ttymouse=sgr  " Fix mouse issues with wide terminals.
 
 set splitbelow
 set splitright
