@@ -69,11 +69,9 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'vim-jp/cpp-vim'
 Plugin 'cscope.vim'
+Plugin 'kien/ctrlp.vim'
 Plugin 'EasyGrep'
-Plugin 'FuzzyFinder'
-Plugin 'L9'
 Plugin 'Valloric/MatchTagAlways'
-Plugin 'scrooloose/nerdtree'
 
 Plugin 'Lokaltog/powerline'
 set runtimepath+=~/.vim/bundle/powerline/powerline/bindings/vim/
@@ -119,8 +117,6 @@ nnoremap <silent> <Leader>h :set hlsearch!<CR>
 nnoremap <silent> <Leader>p :set paste!<CR>
 " Toggle spell checking.
 nnoremap <silent> <Leader>s :set invspell<CR>
-" Toggle NERDTree window.
-nnoremap <silent> <Leader>t :NERDTreeToggle<CR>
 " Open/Save the default session.
 nnoremap <silent> <Leader><Leader>o :OpenSession default<CR>
 nnoremap <silent> <Leader><Leader>s :SaveSession default<CR>
