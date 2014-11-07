@@ -69,7 +69,10 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'vim-jp/cpp-vim'
 Plugin 'cscope.vim'
+
 Plugin 'kien/ctrlp.vim'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10,results:10'
+
 Plugin 'EasyGrep'
 Plugin 'Valloric/MatchTagAlways'
 
