@@ -1,8 +1,20 @@
 # Copyright 2013 Stefan Istrate.
 
-[user]
-	name = Ștefan Istrate
-	email = stefan.istrate@gmail.com
+[alias]
+	a = add
+	ai = add --interactive
+	b = branch
+	ci = commit
+	cl = clone
+	co = checkout
+	fl = log -u
+	hist = log --pretty=format:"%C(yellow)%h\\ %ad\\ %C(red)%d\\ %C(reset)%s\\ %C(blue)[%an]" --graph --date=short
+	ll = log --pretty=format:"%C(yellow)%h\\ %C(red)%d\\ %C(reset)%s\\ %C(blue)[%an]" --decorate --numstat
+	ls = log --pretty=format:"%C(yellow)%h\\ %C(red)%d\\ %C(reset)%s\\ %C(blue)[%an]" --decorate
+	st = status -s
+	who = shortlog -s --
+[color]
+	ui = true
 [credential]
 	helper = "`case \"$OSTYPE\" in darwin*) echo \"osxkeychain\" ;; *) echo \"cache\" ;; esac`"
 [diff]
@@ -14,7 +26,8 @@
 [mergetool "diffmerge"]
 	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
 	trustExitCode = true
-[color]
-	ui = true
 [push]
 	default = simple
+[user]
+	name = Ștefan Istrate
+	email = stefan.istrate@gmail.com
