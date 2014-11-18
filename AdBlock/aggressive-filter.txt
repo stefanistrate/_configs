@@ -1,5 +1,4 @@
 [Adblock]
-! Copyright 2013 Stefan Istrate.
 ! Title: My VERY aggresive list
 ! Expires: 3 days
 ! ----->

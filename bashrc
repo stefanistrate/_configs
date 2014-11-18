@@ -1,5 +1,3 @@
-# Copyright 2013 Stefan Istrate.
-
 # Aliases. {{{
 case "$OSTYPE" in
   darwin*)

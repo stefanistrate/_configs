@@ -1,5 +1,3 @@
-" Copyright 2013 Stefan Istrate.
-"
 " Configure Vim with the following features:
 "   --enable-cscope
 "   --enable-gui=no

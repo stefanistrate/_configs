@@ -1,5 +1,3 @@
-# Copyright 2013 Stefan Istrate.
-
 [alias]
 	a = add
 	ai = add --interactive
