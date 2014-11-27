@@ -27,6 +27,7 @@ facebook.com##div[id^="substream_"] > div > div > .mvm
 facebook.com##div[id^="substream_"] > div > div > div > .mbm > ._4_ck
 facebook.com##div[id^="substream_"] > div > div > div[data-ownerid^="u_"] > .mvm
 facebook.com##div[id^="substream_"] > div > div > div[data-ownerid^="u_"] > div > .mbm > ._4_ck
+facebook.com##div[id^="substream_"] > div > div > div[data-ownerid^="u_"] > div[id^="u_"]
 facebook.com##div[id^="feed_stream_"] > div[id^="js_"] > div > div > div[data-ownerid^="u_"] > .mvm
 facebook.com##div[id^="substream_"] ._2bex > .mbm > ._4_ck
 facebook.com###pagelet_group_ .mbm > ._4_ck
