@@ -15,6 +15,8 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 alias ps='ps -f'
+
+alias workspace='cd ~/workspace'
 # }}}
 
 # Paths. {{{
