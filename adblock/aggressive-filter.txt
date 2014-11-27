@@ -8,6 +8,8 @@
 hotnews.ro##div[id^="article_"][style~="border:1px"]
 ! Facebook trending box.
 facebook.com###pagelet_trending_tags_and_topics
+! Facebook "Your Pages" box.
+facebook.com###pagelet_advertiser_panel
 ! Facebook navigation boxes.
 facebook.com###appsNav
 facebook.com###developerNav
