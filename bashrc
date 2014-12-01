@@ -2,9 +2,11 @@
 case "$OSTYPE" in
   darwin*)
     alias ls='ls -FG'
+    echo 'You should install the GNU ls for better colors.'
     ;;
   linux*)
     alias ls='ls -F --color=auto'
+    eval `dircolors ~/.dircolors.ansi-dark`
     ;;
 esac
 alias ll='ls -l'
@@ -45,6 +47,9 @@ fi
 # Visual. {{{
 # Update the values of LINES and COLUMNS after the window size has changed.
 shopt -s checkwinsize
+
+# Gnome Terminal colors.
+source ~/.solarize-gnome-terminal.sh dark
 
 # Powerline.
 if [ -f ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh ]; then
