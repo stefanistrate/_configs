@@ -49,7 +49,11 @@ fi
 shopt -s checkwinsize
 
 # Gnome Terminal colors.
-source ~/.solarize-gnome-terminal.sh dark
+case "$OSTYPE" in
+  linux*)
+    source ~/.solarize-gnome-terminal.sh dark
+    ;;
+esac
 
 # Powerline.
 if [ -f ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh ]; then
