@@ -1,8 +1,17 @@
+# Paths. {{{
+PATH=/usr/bin:/bin:/usr/sbin:/sbin
+PATH=/usr/local/bin:${PATH}  # Local binaries overwrite system binaries.
+PATH=${PATH}:/opt/local/bin:/opt/local/sbin  # Optional binaries come last.
+export PATH
+# }}}
+
 # Aliases. {{{
 case "$OSTYPE" in
   darwin*)
-    alias ls='ls -FG'
-    echo 'You should install the GNU ls for better colors.'
+    # 'gls' and 'gdircolors' are available from the 'coreutils' package
+    # installed via 'port'.
+    alias ls='gls -F --color=auto'
+    eval `gdircolors ~/.dircolors.ansi-dark`
     ;;
   linux*)
     alias ls='ls -F --color=auto'
@@ -19,13 +28,6 @@ alias fgrep='fgrep --color=auto'
 alias ps='ps -f'
 
 alias workspace='cd ~/workspace'
-# }}}
-
-# Paths. {{{
-PATH=/usr/bin:/bin:/usr/sbin:/sbin
-PATH=/usr/local/bin:${PATH}  # Local binaries overwrite system binaries.
-PATH=${PATH}:/opt/local/bin:/opt/local/sbin  # Optional binaries come last.
-export PATH
 # }}}
 
 # History. {{{
