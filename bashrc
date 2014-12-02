@@ -27,7 +27,7 @@ alias fgrep='fgrep --color=auto'
 
 alias ps='ps -f'
 
-alias workspace='cd ~/workspace'
+alias ws='cd ~/workspace'
 # }}}
 
 # History. {{{
