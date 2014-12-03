@@ -13,6 +13,8 @@
 	who = shortlog -s --
 [color]
 	ui = true
+[core]
+	editor = vim
 [credential]
 	helper = "`case \"$OSTYPE\" in darwin*) echo \"osxkeychain\" ;; *) echo \"cache\" ;; esac`"
 [diff]
