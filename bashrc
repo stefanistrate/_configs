@@ -1,7 +1,6 @@
 # Paths. {{{
 PATH=/usr/bin:/bin:/usr/sbin:/sbin
-PATH=/usr/local/bin:${PATH}  # Local binaries overwrite system binaries.
-PATH=${PATH}:/opt/local/bin:/opt/local/sbin  # Optional binaries come last.
+PATH=/usr/local/bin:${PATH}  # Local binaries override system binaries.
 export PATH
 # }}}
 
@@ -41,9 +40,18 @@ bind '"\e[B":history-search-forward' 2>/dev/null  # Forward history search.
 # }}}
 
 # Bash completion. {{{
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-  . /etc/bash_completion
-fi
+case "$OSTYPE" in
+  darwin*)
+    if [ -f $(brew --prefix)/etc/bash_completion ]; then
+      . $(brew --prefix)/etc/bash_completion
+    fi
+    ;;
+  linux*)
+    if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+      . /etc/bash_completion
+    fi
+    ;;
+esac
 # }}}
 
 # Visual. {{{
@@ -63,7 +71,7 @@ if [ -f ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh ]; then
 fi
 # }}}
 
-# Local settings to overwrite general settings. {{{
+# Local settings to override general settings. {{{
 if [ -f ~/.bashrc.local ]; then
   source ~/.bashrc.local
 fi

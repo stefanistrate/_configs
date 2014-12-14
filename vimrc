@@ -2,7 +2,6 @@
 "   --enable-cscope
 "   --enable-gui=no
 "   --enable-pythoninterp=yes
-"   --enable-python3interp=yes
 "   --with-features=huge
 
 " General. {{{
