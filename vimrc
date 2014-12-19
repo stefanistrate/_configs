@@ -92,7 +92,7 @@ Plugin 'xolox/vim-session'
 let g:session_autoload='no'
 let g:session_autosave='no'
 
-if filereadable(expand('~/.at_google')) != 1  " Non-Google only.
+if filereadable(expand('~/.at.google')) != 1  " Non-Google only.
   Plugin 'Valloric/YouCompleteMe'
   let g:ycm_global_ycm_extra_conf=
       \ '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
