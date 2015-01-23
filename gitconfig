@@ -8,6 +8,7 @@
 	df = diff
 	dfc = diff --cached
 	dfh = diff HEAD
+	dummy = commit -a -m .
 	fl = log -u
 	hist = log --pretty=format:"%C(yellow)%h\\ %ad\\ %C(red)%d\\ %C(reset)%s\\ %C(blue)[%an]" --graph --date=short
 	ll = log --pretty=format:"%C(yellow)%h\\ %C(red)%d\\ %C(reset)%s\\ %C(blue)[%an]" --decorate --numstat
