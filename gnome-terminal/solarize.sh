@@ -4,7 +4,7 @@
 # colors. Written for Ubuntu 11.10, untested on anything else.
 #
 # Solarized theme: http://ethanschoonover.com/solarized
-# 
+#
 # Adapted from these sources:
 # https://gist.github.com/1280177
 # http://xorcode.com/guides/solarized-vim-eclipse-ubuntu/
