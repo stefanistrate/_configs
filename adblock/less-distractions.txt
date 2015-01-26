@@ -1,36 +1,30 @@
 [Adblock]
-! Title: My VERY aggresive list
-! Expires: 3 days
-! ----->
-! Personal website.
-@@||stefanistrate.com/$document
-! Hotnews marketing articles.
-hotnews.ro##div[id^="article_"][style~="border:1px"]
-! Facebook trending box.
-facebook.com###pagelet_trending_tags_and_topics
-! Facebook "Your Pages" box.
-facebook.com###pagelet_advertiser_panel
+! Title: Less Distractions = Better Productivity
+! Version: 20150126
+! Expires: 1 days
+! ==============================================================================
+! Other recommended lists to subscribe to:
+! AdBlock custom filters:
+!   https://data.getadblock.com/filters/adblock_custom.txt
+! EasyList:
+!   https://easylist-downloads.adblockplus.org/easylist.txt
+! Fanboy's Annoyances:
+!   https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt
+! Malware Domains:
+!   https://easylist-downloads.adblockplus.org/malwaredomains_full.txt
+! Facebook Annoyances Blocker:
+!   https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt
+! ==============================================================================
 ! Facebook navigation boxes.
 facebook.com###appsNav
 facebook.com###developerNav
+facebook.com###eventsNav
 facebook.com###groupsNav
 facebook.com###interestsNav
 facebook.com###listsNav
 facebook.com###pagesNav
-! Facebook suggestions.
-facebook.com###rightCol .ego_column.egoOrganicColumn
-facebook.com##.rhc .ego_column.egoOrganicColumn
-! Facebook similar content.
-facebook.com##.commentable_item + .mvs
-facebook.com##.commentable_item + div > .mvs
-facebook.com##div[id^="substream_"] > div > div > .mvm
-facebook.com##div[id^="substream_"] > div > div > div > .mbm > ._4_ck
-facebook.com##div[id^="substream_"] > div > div > div[data-ownerid^="u_"] > .mvm
-facebook.com##div[id^="substream_"] > div > div > div[data-ownerid^="u_"] > div > .mbm > ._4_ck
-facebook.com##div[id^="substream_"] > div > div > div[data-ownerid^="u_"] > div[id^="u_"]
-facebook.com##div[id^="feed_stream_"] > div[id^="js_"] > div > div > div[data-ownerid^="u_"] > .mvm
-facebook.com##div[id^="substream_"] ._2bex > .mbm > ._4_ck
-facebook.com###pagelet_group_ .mbm > ._4_ck
 ! Facebook news feed.
 facebook.com##div[id^="topnews_main_stream_"]
-! <-----
+! Hotnews marketing articles.
+hotnews.ro##div[id^="article_"][style~="border:1px"]
+! ==============================================================================
