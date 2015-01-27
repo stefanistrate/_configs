@@ -12,8 +12,6 @@
 	hist = log --pretty=format:"%C(yellow)%h\\ %ad\\ %C(red)%d\\ %C(reset)%s\\ %C(blue)[%an]" --graph --date=short
 	ll = log --pretty=format:"%C(yellow)%h\\ %C(red)%d\\ %C(reset)%s\\ %C(blue)[%an]" --decorate --numstat
 	ls = log --pretty=format:"%C(yellow)%h\\ %C(red)%d\\ %C(reset)%s\\ %C(blue)[%an]" --decorate
-	new = commit -a -m .
-	old = commit -a --amend
 	st = status -s
 	who = shortlog -s --
 [color]

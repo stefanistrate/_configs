@@ -37,12 +37,6 @@ set showmatch  " Show matching brackets.
 set list  " Display unprintable characters.
 set listchars=tab:·\ ,trail:·,extends:»,precedes:«  " Unprintable chars.
 
-set foldenable  " Enable folding.
-set foldmethod=syntax  " Syntax based folding.
-set foldnestmax=4  " Maximum nesting of folds.
-set foldcolumn=5
-autocmd Syntax * normal zR
-
 set mouse=a  " Enable mouse.
 set ttymouse=sgr  " Fix mouse issues with wide terminals.
 

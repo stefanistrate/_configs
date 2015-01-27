@@ -61,7 +61,7 @@ shopt -s checkwinsize
 # Gnome Terminal colors.
 case "$OSTYPE" in
   linux*)
-    source ~/.solarize-gnome-terminal.sh dark
+    source ~/.gnome-terminal-solarize.sh dark
     ;;
 esac
 
