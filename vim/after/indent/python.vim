@@ -1,16 +1,13 @@
-" Settings file developed by Google Inc. Original version at
-" http://google-styleguide.googlecode.com/svn/trunk/google_python_style.vim
-"
 " Indent Python in the Google way.
 
 setlocal indentexpr=GetGooglePythonIndent(v:lnum)
 
-let s:maxoff=50  " Maximum number of lines to look backwards.
+let s:maxoff = 50 " maximum number of lines to look backwards.
 
-function! GetGooglePythonIndent(lnum)
+function GetGooglePythonIndent(lnum)
 
-  " Indent inside parentheses. Align with the open parenthesis unless it is at
-  " the end of the line.
+  " Indent inside parens.
+  " Align with the open paren unless it is at the end of the line.
   " E.g.
   "   open_paren_not_at_EOL(100,
   "                         (200,
@@ -19,10 +16,10 @@ function! GetGooglePythonIndent(lnum)
   "   open_paren_at_EOL(
   "       100, 200, 300, 400)
   call cursor(a:lnum, 1)
-  let [par_line, par_col]=searchpairpos('(\|{\|\[', '', ')\|}\|\]', 'bW',
-      \ "line('.') < " . (a:lnum - s:maxoff) . " ? dummy :"
-      \ . " synIDattr(synID(line('.'), col('.'), 1), 'name')"
-      \ . " =~ '\\(Comment\\|String\\)$'")
+  let [par_line, par_col] = searchpairpos('(\|{\|\[', '', ')\|}\|\]', 'bW',
+        \ "line('.') < " . (a:lnum - s:maxoff) . " ? dummy :"
+        \ . " synIDattr(synID(line('.'), col('.'), 1), 'name')"
+        \ . " =~ '\\(Comment\\|String\\)$'")
   if par_line > 0
     call cursor(par_line, 1)
     if par_col != col("$") - 1
