@@ -5,6 +5,7 @@ export PATH
 # }}}
 
 # Aliases. {{{
+shopt -s expand_aliases
 case "$OSTYPE" in
   darwin*)
     # 'gls' and 'gdircolors' are available from the 'coreutils' package

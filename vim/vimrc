@@ -20,6 +20,8 @@ set whichwrap+=<,>,[,]  " Left/right keys navigation.
 set backspace=indent,eol,start  " More powerful backspacing.
 
 syntax on  " Enable syntax.
+
+let $BASH_ENV = "~/.bashrc"  " Load full configuration for bash shell.
 " }}}
 
 " Visual. {{{
