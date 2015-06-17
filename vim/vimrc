@@ -90,14 +90,19 @@ let g:session_autosave='no'
 
 if filereadable(expand('~/.at.google')) != 1  " Non-Google only.
   Plugin 'Valloric/YouCompleteMe'
-  let g:ycm_global_ycm_extra_conf=
-      \ '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+  let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
   let g:ycm_register_as_syntastic_checker=0
   let g:ycm_autoclose_preview_window_after_completion=1
 endif
 
 call vundle#end()  " Required!
 colorscheme solarized  " Enable the solarized colors after plugins are loaded.
+" }}}
+
+" Functions. {{{
+function! GetCurrentGitBranch()
+  return substitute(system("git rev-parse --abbrev-ref HEAD"), '\n', '', '')
+endfunction
 " }}}
 
 " Commands. {{{
@@ -114,8 +119,8 @@ nnoremap <silent> <Leader>p :set paste!<CR>
 " Toggle spell checking.
 nnoremap <silent> <Leader>s :set invspell<CR>
 " Open/Save the default session.
-nnoremap <silent> <Leader><Leader>o :OpenSession default<CR>
-nnoremap <silent> <Leader><Leader>s :SaveSession default<CR>
+nnoremap <silent> <Leader><Leader>o :execute 'OpenSession ' . GetCurrentGitBranch()<CR>
+nnoremap <silent> <Leader><Leader>s :execute 'SaveSession ' . GetCurrentGitBranch()<CR>
 " }}}
 
 " Local settings to overwrite general settings. {{{
