@@ -57,46 +57,31 @@ filetype off  " Required!
 set runtimepath+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
-" Required!
+" Required! Let Vundle manage itself.
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'vim-jp/cpp-vim'
-Plugin 'cscope.vim'
-
-Plugin 'kien/ctrlp.vim'
-let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:10,results:10'
-
-Plugin 'EasyGrep'
-Plugin 'Valloric/MatchTagAlways'
-
-Plugin 'Lokaltog/powerline'
-set runtimepath+=~/.vim/bundle/powerline/powerline/bindings/vim/
-set laststatus=2  " Show the status line.
-
-Plugin 'sudo.vim'
-Plugin 'tComment'
-
-Plugin 'altercation/vim-colors-solarized.git'
+Plugin 'altercation/vim-colors-solarized.git'  " For solarized theme.
 set background=dark
 set t_Co=256
-
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'xolox/vim-misc'
-
-Plugin 'xolox/vim-session'
-let g:session_autoload='no'
-let g:session_autosave='no'
-
-if filereadable(expand('~/.at.google')) != 1  " Non-Google only.
+Plugin 'bling/vim-airline'  " For fast statusline.
+Plugin 'kien/ctrlp.vim'  " For fuzzy path finder.
+let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:25,results:25'
+Plugin 'octol/vim-cpp-enhanced-highlight'  " For C++11/14 syntax highlighting.
+Plugin 'sudo.vim'  " For editing files with sudo from non-sudo vim sessions.
+Plugin 'tComment'  " For easier commenting.
+if filereadable(expand('~/.at.google')) != 1  " For code completion (when not at Google only).
   Plugin 'Valloric/YouCompleteMe'
   let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
   let g:ycm_register_as_syntastic_checker=0
   let g:ycm_autoclose_preview_window_after_completion=1
 endif
+Plugin 'xolox/vim-misc'  " Required by 'xolox/vim-session'.
+Plugin 'xolox/vim-session'  " For session management.
+let g:session_autoload='no'
+let g:session_autosave='no'
 
 call vundle#end()  " Required!
-colorscheme solarized  " Enable the solarized colors after plugins are loaded.
+colorscheme solarized  " Enable the solarized theme after plugins are loaded.
 " }}}
 
 " Functions. {{{
