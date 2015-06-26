@@ -1,6 +1,6 @@
 # Paths. {{{
 PATH=/usr/bin:/bin:/usr/sbin:/sbin
-PATH=/usr/local/bin:${PATH}  # Local binaries override system binaries.
+PATH=/usr/local/bin:/usr/local/sbin:${PATH}  # Local binaries override system binaries.
 export PATH
 # }}}
 
@@ -44,12 +44,12 @@ bind '"\e[B":history-search-forward' 2>/dev/null  # Forward history search.
 case "$OSTYPE" in
   darwin*)
     if [ -f $(brew --prefix)/etc/bash_completion ]; then
-      . $(brew --prefix)/etc/bash_completion
+      source $(brew --prefix)/etc/bash_completion
     fi
     ;;
   linux*)
     if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-      . /etc/bash_completion
+      source /etc/bash_completion
     fi
     ;;
 esac
@@ -67,9 +67,18 @@ case "$OSTYPE" in
 esac
 
 # Powerline.
-if [ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh ]; then
-  source /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
-fi
+case "$OSTYPE" in
+  darwin*)
+    if [ -f /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
+      source /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+    fi
+    ;;
+  linux*)
+    if [ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh ]; then
+      source /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+    fi
+    ;;
+esac
 # }}}
 
 # Local settings to override general settings. {{{
