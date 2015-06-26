@@ -15,7 +15,7 @@
 ! Facebook Annoyances Blocker:
 !   https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt
 ! ==============================================================================
-! Facebook navigation boxes.
+! Disable Facebook navigation boxes.
 facebook.com###appsNav
 facebook.com###developerNav
 facebook.com###eventsNav
@@ -23,8 +23,11 @@ facebook.com###groupsNav
 facebook.com###interestsNav
 facebook.com###listsNav
 facebook.com###pagesNav
-! Facebook news feed.
+! Disable Facebook news feed.
 facebook.com##div[id^="topnews_main_stream_"]
-! Hotnews marketing articles.
+! Disable Hotnews marketing articles.
 hotnews.ro##div[id^="article_"][style~="border:1px"]
+! Enable Gmail labels matching the names of social networks.
+mail.google.com#@#a[title="facebook"]
+mail.google.com#@#a[title="twitter"]
 ! ==============================================================================
