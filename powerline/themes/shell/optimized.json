@@ -1,0 +1,39 @@
+{
+	"segments": {
+		"left": [
+			{
+				"function": "powerline.segments.common.net.hostname",
+				"priority": 50
+			},
+			{
+				"function": "powerline.segments.common.time.date",
+				"priority": 10,
+				"args": {
+					"format": "%H:%M:%S"
+				}
+			},
+			{
+				"function": "powerline.segments.common.env.user",
+				"priority": 10
+			},
+			{
+				"function": "powerline.segments.shell.cwd",
+				"priority": 10,
+				"args": {
+					"dir_limit_depth": 0
+				}
+			},
+			{
+				"function": "powerline.segments.common.vcs.branch",
+				"priority": 10,
+				"args": {
+					"status_colors": false
+				}
+			},
+			{
+				"function": "powerline.segments.shell.last_status",
+				"priority": 20
+			}
+		]
+	}
+}

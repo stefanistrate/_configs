@@ -75,6 +75,9 @@ if __name__ == '__main__':
         make_symlink('gnome-terminal/solarize.sh',
                      HOME, '.gnome-terminal-solarize.sh')
 
+    # Powerline.
+    make_symlink('powerline', HOME, '.config/powerline')
+
     # Vim.
     make_symlink('vim/vimrc', HOME, '.vimrc')
     make_symlink('vim/after', HOME, '.vim/after')
