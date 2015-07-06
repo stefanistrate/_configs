@@ -6,9 +6,9 @@
 		"cwd":                     { "fg": "solarized:base3", "bg": "solarized:green", "attrs": [] },
 		"cwd:current_folder":      { "fg": "solarized:base3", "bg": "solarized:green", "attrs": ["bold"] },
 		"cwd:divider":             { "fg": "solarized:base3", "bg": "solarized:green", "attrs": [] },
-		"date":                    { "fg": "solarized:green", "bg": "solarized:base02", "attrs": [] },
+		"date":                    { "fg": "solarized:base3", "bg": "solarized:blue", "attrs": [] },
 		"exit_fail":               { "fg": "solarized:base3", "bg": "solarized:orange", "attrs": [] },
 		"hostname":                { "fg": "solarized:base3", "bg": "solarized:yellow", "attrs": [] },
-		"user":                    { "fg": "solarized:green", "bg": "solarized:base02", "attrs": [] }
+		"user":                    { "fg": "solarized:base3", "bg": "solarized:blue", "attrs": [] }
 	}
 }
