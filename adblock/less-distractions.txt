@@ -23,8 +23,6 @@ facebook.com###groupsNav
 facebook.com###interestsNav
 facebook.com###listsNav
 facebook.com###pagesNav
-! Disable Facebook news feed.
-facebook.com##div[id^="topnews_main_stream_"]
 ! Disable Hotnews marketing articles.
 hotnews.ro##div[id^="article_"][style~="border:1px"]
 ! Enable Gmail labels matching the names of social networks.
