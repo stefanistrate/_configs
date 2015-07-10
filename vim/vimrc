@@ -20,8 +20,6 @@ set whichwrap+=<,>,[,]  " Left/right keys navigation.
 set backspace=indent,eol,start  " More powerful backspacing.
 
 syntax on  " Enable syntax.
-
-let $BASH_ENV = "~/.bashrc"  " Load full configuration for bash shell.
 " }}}
 
 " Visual. {{{
@@ -109,6 +107,9 @@ nnoremap <silent> <Leader>s :set invspell<CR>
 " Open/Save the default session.
 nnoremap <silent> <Leader><Leader>o :execute 'OpenSession ' . GetCurrentGitBranch()<CR>
 nnoremap <silent> <Leader><Leader>s :execute 'SaveSession ' . GetCurrentGitBranch()<CR>
+" Open the corresponding .cc/.h file based on the current file.
+nnoremap <silent> <Leader><Leader>cc :vsplit %:r.cc<CR>
+nnoremap <silent> <Leader><Leader>h :vsplit %:r.h<CR>
 " }}}
 
 " Local settings to overwrite general settings. {{{
