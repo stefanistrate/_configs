@@ -1,0 +1,61 @@
+# Set global configuration.
+export EDITOR='vim'
+export PATH='/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin'
+export ZSH=~/.oh-my-zsh
+
+# Display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS=true
+
+# Use hyphen-insensitive completion. _ and - will be interchangeable.
+HYPHEN_INSENSITIVE=true
+
+# Enable command auto-correction.
+ENABLE_CORRECTION=true
+
+# Append history rather than replace it.
+setopt APPEND_HISTORY
+
+# Do not add duplicates of the previous command to the history.
+setopt HIST_IGNORE_DUPS
+
+# Do not add commands starting with a space character to the history.
+setopt HIST_IGNORE_SPACE
+
+# Set name and parameters of the theme to load.
+ZSH_THEME='powerlevel9k/powerlevel9k'
+POWERLEVEL9K_COLOR_SCHEME='dark'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status context time)
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_STATUS_BACKGROUND='008'
+POWERLEVEL9K_CONTEXT_BACKGROUND='238'
+POWERLEVEL9K_CONTEXT_FOREGROUND='235'
+POWERLEVEL9K_TIME_BACKGROUND='239'
+POWERLEVEL9K_TIME_FOREGROUND='235'
+
+# Set plugins to load.
+plugins=(common-aliases copyfile last-working-dir osx pip python)
+
+# Load oh-my-zsh.
+source $ZSH/oh-my-zsh.sh
+
+# Set personal aliases.
+case "$OSTYPE" in
+  darwin*)
+    alias ls='gls -F --color=auto'
+    eval `gdircolors ~/.dircolors.ansi-dark`
+    ;;
+  linux*)
+    alias ls='ls -F --color=auto'
+    eval `dircolors ~/.dircolors.ansi-dark`
+    ;;
+esac
+alias ws='cd ~/workspace'
+
+# Make completion use the same colors as ls.
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+# Enable local settings, which override general settings.
+if [ -f ~/.zshrc.local ]; then
+  source ~/.zshrc.local
+fi

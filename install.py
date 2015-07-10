@@ -81,3 +81,6 @@ if __name__ == '__main__':
     # Vim.
     make_symlink('vim/vimrc', HOME, '.vimrc')
     make_symlink('vim/after', HOME, '.vim/after')
+
+    # Zsh.
+    make_symlink('zsh/zshrc', HOME, '.zshrc')
