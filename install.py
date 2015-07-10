@@ -62,21 +62,23 @@ if __name__ == '__main__':
                  '/Applications/Adobe Photoshop CC 2014',
                  'Presets/Scripts/WebSharpener_Settings.xml')
 
-    # Bash.
-    make_symlink('bash/bashrc', HOME, '.bashrc')
-    make_symlink('bash/dircolors.ansi-dark', HOME, '.dircolors.ansi-dark')
-    make_symlink('bash/profile', HOME, '.profile')
+    # ***DISABLED*** Bash.
+    # make_symlink('bash/bashrc', HOME, '.bashrc')
+    # make_symlink('bash/profile', HOME, '.profile')
+
+    # Dircolors.
+    make_symlink('dircolors/dircolors.ansi-dark', HOME, '.dircolors.ansi-dark')
 
     # Git.
     make_symlink('git/gitconfig', HOME, '.gitconfig')
 
-    # GNOME Terminal.
-    if sys.platform == 'linux2':
-        make_symlink('gnome-terminal/solarize.sh',
-                     HOME, '.gnome-terminal-solarize.sh')
+    # ***DISABLED*** GNOME Terminal.
+    # if sys.platform == 'linux2':
+    #     make_symlink('gnome-terminal/solarize.sh',
+    #                  HOME, '.gnome-terminal-solarize.sh')
 
-    # Powerline.
-    make_symlink('powerline', HOME, '.config/powerline')
+    # ***DISABLED*** Powerline.
+    # make_symlink('powerline', HOME, '.config/powerline')
 
     # Vim.
     make_symlink('vim/vimrc', HOME, '.vimrc')
