@@ -8,8 +8,6 @@ export PATH
 shopt -s expand_aliases
 case "$OSTYPE" in
   darwin*)
-    # 'gls' and 'gdircolors' are available from the 'coreutils' package
-    # installed via 'port'.
     alias ls='gls -F --color=auto'
     eval `gdircolors ~/.dircolors.ansi-dark`
     ;;
