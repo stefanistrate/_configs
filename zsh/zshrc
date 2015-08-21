@@ -58,26 +58,37 @@ POWERLEVEL9K_TIME_BACKGROUND='239'
 POWERLEVEL9K_TIME_FOREGROUND='235'
 
 # Set plugins to load.
-plugins=(common-aliases copyfile last-working-dir osx pip python)
+plugins=(
+  common-aliases  # aliases for common Unix utilities
+  copyfile  # copy file to system-wide clipboard
+  osx  # access OS X applications from terminal
+  python  # pyfind, pyclean, pygrep
+)
 
 # Load oh-my-zsh.
 source $ZSH/oh-my-zsh.sh
 
-# Set personal aliases.
+# Set solarized colors for the GNU ls utility and for zsh completion.
 case "$OSTYPE" in
   darwin*)
-    alias ls='gls -F --color=auto'
     eval `gdircolors ~/.dircolors.ansi-dark`
     ;;
   linux*)
-    alias ls='ls -F --color=auto'
     eval `dircolors ~/.dircolors.ansi-dark`
     ;;
 esac
-alias ws='cd ~/workspace'
-
-# Make completion use the same colors as ls.
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+# Set additional aliases.
+case "$OSTYPE" in
+  darwin*)
+    alias ls='gls -F --color=auto'
+    ;;
+  linux*)
+    alias ls='ls -F --color=auto'
+    ;;
+esac
+alias ws='cd ~/workspace'
 
 # Enable local settings, which override general settings.
 if [ -f ~/.zshrc.local ]; then
