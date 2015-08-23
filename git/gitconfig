@@ -24,6 +24,8 @@
 	tool = diffmerge
 [difftool "diffmerge"]
 	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[init]
+	templatedir = ~/.git-templates
 [merge]
 	conflictstyle = diff3
 	tool = diffmerge

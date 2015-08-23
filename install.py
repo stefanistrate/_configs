@@ -68,6 +68,7 @@ if __name__ == '__main__':
 
     # Git.
     make_symlink('git/gitconfig', HOME, '.gitconfig')
+    make_symlink('git/git-templates', HOME, '.git-templates')
 
     # GNOME Terminal.
     if sys.platform == 'linux2':
