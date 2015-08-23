@@ -74,6 +74,9 @@ if __name__ == '__main__':
     if sys.platform == 'linux2':
         subprocess.call("/bin/sh gnome-terminal/solarize.sh dark", shell=True)
 
+    # Pylint.
+    make_symlink('pylint/pylintrc', HOME, '.pylintrc')
+
     # Vim.
     make_symlink('vim/vimrc', HOME, '.vimrc')
     make_symlink('vim/after', HOME, '.vim/after')
