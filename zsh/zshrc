@@ -33,8 +33,8 @@ COMPLETION_WAITING_DOTS=true
 # Use hyphen-insensitive completion. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE=true
 
-# Enable command auto-correction.
-ENABLE_CORRECTION=true
+# Disable command auto-correction.
+ENABLE_CORRECTION=false
 
 # Append history rather than replace it.
 setopt APPEND_HISTORY
