@@ -8,8 +8,6 @@
 !   https://data.getadblock.com/filters/adblock_custom.txt
 ! EasyList:
 !   https://easylist-downloads.adblockplus.org/easylist.txt
-! Fanboy's Annoyances:
-!   https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt
 ! Malware Domains:
 !   https://easylist-downloads.adblockplus.org/malwaredomains_full.txt
 ! Facebook Annoyances Blocker:
