@@ -65,8 +65,9 @@ alias ws='cd ~/workspace'
 
 # Map various keys to custom functionality.
 zmodload zsh/terminfo
-bindkey "$terminfo[kcuu1]" history-beginning-search-backward  # UP arrow key
-bindkey "$terminfo[kcud1]" history-beginning-search-forward   # DOWN arrow key
+bindkey "$terminfo[kent]" accept-line  # keypad Enter
+bindkey "$terminfo[kcuu1]" history-beginning-search-backward  # UP arrow
+bindkey "$terminfo[kcud1]" history-beginning-search-forward   # DOWN arrow
 
 # Enable local settings, which override general settings.
 if [ -f ~/.zshrc.local ]; then
