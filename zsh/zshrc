@@ -64,10 +64,13 @@ esac
 alias ws='cd ~/workspace'
 
 # Map various keys to custom functionality.
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
 zmodload zsh/terminfo
 bindkey "$terminfo[kent]" accept-line  # keypad Enter
-bindkey "$terminfo[kcuu1]" history-beginning-search-backward  # UP arrow
-bindkey "$terminfo[kcud1]" history-beginning-search-forward   # DOWN arrow
+bindkey "$terminfo[kcuu1]" history-beginning-search-backward-end  # UP arrow
+bindkey "$terminfo[kcud1]" history-beginning-search-forward-end   # DOWN arrow
 
 # Enable local settings, which override general settings.
 if [ -f ~/.zshrc.local ]; then
