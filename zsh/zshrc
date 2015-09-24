@@ -72,6 +72,12 @@ bindkey "$terminfo[kent]" accept-line  # keypad Enter
 bindkey "$terminfo[kcuu1]" history-beginning-search-backward-end  # UP arrow
 bindkey "$terminfo[kcud1]" history-beginning-search-forward-end   # DOWN arrow
 
+# Start ``screen`` automatically when coming from a remote SSH connection.
+if [ -n "$SSH_CONNECTION" ]
+then
+  screen -R
+fi
+
 # Enable local settings, which override general settings.
 if [ -f ~/.zshrc.local ]; then
   source ~/.zshrc.local
