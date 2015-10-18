@@ -70,6 +70,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'  " For C++11/14 syntax highlighting.
 Plugin 'sudo.vim'  " For editing files with sudo from non-sudo vim sessions.
 Plugin 'tComment'  " For easier commenting.
 Plugin 'tpope/vim-fugitive'  " For git.
+Plugin 'Valloric/MatchTagAlways'  " For highlighting the enclosing HTML/XML tags.
 if filereadable(expand('~/.at.google')) != 1  " For code completion (when not at Google only).
   Plugin 'Valloric/YouCompleteMe'
   let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
