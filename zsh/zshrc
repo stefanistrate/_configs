@@ -19,6 +19,9 @@ setopt HIST_IGNORE_DUPS
 # Do not add commands starting with a space character to the history.
 setopt HIST_IGNORE_SPACE
 
+# Do not throw any error if a pattern for filename generation has no matches.
+unsetopt NOMATCH
+
 # Set name and parameters of the theme to load.
 ZSH_THEME='bullet-train'
 BULLETTRAIN_TIME_SHOW=true
