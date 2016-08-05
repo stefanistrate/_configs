@@ -1,6 +1,6 @@
 [Adblock]
 ! Title: Less Distractions = Better Productivity
-! Version: 20150126
+! Version: 20160805
 ! Expires: 1 days
 ! ==============================================================================
 ! Other recommended lists to subscribe to:
@@ -21,9 +21,5 @@ facebook.com###groupsNav
 facebook.com###interestsNav
 facebook.com###listsNav
 facebook.com###pagesNav
-! Disable Hotnews marketing articles.
-hotnews.ro##div[id^="article_"][style~="border:1px"]
-! Enable Gmail labels matching the names of social networks.
-mail.google.com#@#a[title="facebook"]
-mail.google.com#@#a[title="twitter"]
+facebook.com###paymentsNav
 ! ==============================================================================
