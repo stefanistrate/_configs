@@ -80,14 +80,6 @@ bindkey "$terminfo[kent]" accept-line  # keypad Enter
 bindkey "$terminfo[kcuu1]" history-beginning-search-backward-end  # UP arrow
 bindkey "$terminfo[kcud1]" history-beginning-search-forward-end   # DOWN arrow
 
-# Start ``screen`` automatically when coming from a remote SSH connection. Try
-# it only once, to avoid looping in case ``screen`` fails for some reason.
-if [ -n "$SSH_TTY" -a -z "$STARTED_SCREEN" ]
-then
-  export STARTED_SCREEN=1
-  screen -RR
-fi
-
 # Enable local settings, which override general settings.
 if [ -f ~/.zshrc.local ]; then
   source ~/.zshrc.local
