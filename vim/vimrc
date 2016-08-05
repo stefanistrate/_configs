@@ -59,7 +59,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized.git'  " For solarized theme.
-set background=dark
+set background=light
 set t_Co=256
 Plugin 'bling/vim-airline'  " For fast statusline.
 set laststatus=2
