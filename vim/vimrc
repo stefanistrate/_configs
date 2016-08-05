@@ -29,8 +29,6 @@ set ruler  " Show ruler.
 set title  " Let vim set the title of the window.
 set cursorline  " Highlight the current line.
 set colorcolumn=81  " Highlight the length limit of code lines.
-set scrolloff=3  " Show context before/after the cursor.
-set sidescrolloff=7  " Show context to the left/right of the cursor.
 set sidescroll=1  " Scroll horizontally 1 position at a time.
 set showmatch  " Show matching brackets.
 
