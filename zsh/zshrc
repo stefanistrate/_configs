@@ -52,10 +52,10 @@ source $ZSH/oh-my-zsh.sh
 # Set solarized colors for the GNU ls utility and for zsh completion.
 case "$OSTYPE" in
   darwin*)
-    eval `gdircolors ~/.dircolors.ansi-dark`
+    eval `gdircolors ~/.dircolors.ansi-light`
     ;;
   linux*)
-    eval `dircolors ~/.dircolors.ansi-dark`
+    eval `dircolors ~/.dircolors.ansi-light`
     ;;
 esac
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}

@@ -64,14 +64,14 @@ if __name__ == '__main__':
                  'Presets/Scripts/WebSharpener_Settings.xml')
 
     # Dircolors.
-    make_symlink('dircolors/dircolors.ansi-dark', HOME, '.dircolors.ansi-dark')
+    make_symlink('dircolors/dircolors.ansi-light', HOME, '.dircolors.ansi-light')
 
     # Git.
     make_symlink('git/gitconfig', HOME, '.gitconfig')
 
     # GNOME Terminal.
     if sys.platform == 'linux2':
-        subprocess.call("/bin/sh gnome-terminal/solarize.sh dark", shell=True)
+        subprocess.call("/bin/sh gnome-terminal/solarize.sh light", shell=True)
 
     # Pylint.
     make_symlink('pylint/pylintrc', HOME, '.pylintrc')
