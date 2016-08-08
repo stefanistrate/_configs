@@ -17,9 +17,13 @@ function make_symlink {
 }
 
 function install_adobe_photoshop {
-  make_symlink \
-      adobe-photoshop/WebSharpener_Settings.xml \
-      "/Applications/Adobe Photoshop CC 2014/Presets/Scripts/WebSharpener_Settings.xml"
+  case "$OSTYPE" in
+    darwin*)
+      make_symlink \
+          adobe-photoshop/WebSharpener_Settings.xml \
+          "/Applications/Adobe Photoshop CC 2014/Presets/Scripts/WebSharpener_Settings.xml"
+      ;;
+  esac
 }
 
 function install_dircolors {
