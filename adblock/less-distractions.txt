@@ -22,4 +22,7 @@ facebook.com###interestsNav
 facebook.com###listsNav
 facebook.com###pagesNav
 facebook.com###paymentsNav
+! Disable Facebook right column boxes.
+facebook.com###pagelet_ego_pane
+facebook.com###pagelet_trending_tags_and_topics
 ! ==============================================================================
