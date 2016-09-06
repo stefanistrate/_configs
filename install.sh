@@ -61,7 +61,8 @@ function install_zsh {
 }
 
 
-install_adobe_photoshop
+# TODO(stefan): Re-enable this when the WebSharpener config is revisited.
+# install_adobe_photoshop
 install_dircolors
 install_git
 install_gnome_terminal
