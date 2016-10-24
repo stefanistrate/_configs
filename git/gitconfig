@@ -21,15 +21,14 @@
 [credential]
 	helper = "`case \"$OSTYPE\" in darwin*) echo \"osxkeychain\" ;; *) echo \"cache\" ;; esac`"
 [diff]
-	tool = diffmerge
-[difftool "diffmerge"]
-	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+	tool = vimdiff
+[difftool]
+	prompt = false
 [merge]
 	conflictstyle = diff3
-	tool = diffmerge
-[mergetool "diffmerge"]
-	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
-	trustExitCode = true
+	tool = vimdiff
+[mergetool]
+	prompt = false
 [push]
 	default = simple
 [user]
