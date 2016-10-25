@@ -53,6 +53,7 @@ function install_pylint {
 
 function install_tmux {
   make_symlink tmux/tmux.conf ~/.tmux.conf
+  make_symlink tmux/tmux.ssh ~/.tmux.ssh
 }
 
 function install_vim {

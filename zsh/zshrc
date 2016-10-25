@@ -78,11 +78,16 @@ fi
 # Attach to an existing tmux session or start a new one.
 if which tmux &>/dev/null; then
   if [ -z "$TMUX" ]; then
+    if [ -z "$SSH_CONNECTION" ]; then
+      TMUX_CONFIG=~/.tmux.conf
+    else
+      TMUX_CONFIG=~/.tmux.ssh
+    fi
     tmux has &>/dev/null
     if [ $? -eq 1 ]; then
-      exec tmux new
+      exec tmux -f $TMUX_CONFIG new
     else
-      exec tmux attach
+      exec tmux -f $TMUX_CONFIG attach
     fi
   fi
 fi
