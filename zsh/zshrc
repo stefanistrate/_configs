@@ -74,3 +74,25 @@ bindkey "$terminfo[kcud1]" history-beginning-search-forward-end   # DOWN arrow
 if [ -f ~/.zshrc.local ]; then
   source ~/.zshrc.local
 fi
+
+# Replace the built-in exit function to detach from a tmux session before
+# quitting.
+function exit() {
+  if [ -n "$TMUX" ]; then
+    tmux detach
+  else
+    builtin exit
+  fi
+}
+
+# Attach to an existing tmux session or start a new one.
+if which tmux &>/dev/null; then
+  if [ -z "$TMUX" ]; then
+    tmux has &>/dev/null
+    if [ $? -eq 1 ]; then
+      exec tmux new
+    else
+      exec tmux attach
+    fi
+  fi
+fi
