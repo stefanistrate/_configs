@@ -75,16 +75,6 @@ if [ -f ~/.zshrc.local ]; then
   source ~/.zshrc.local
 fi
 
-# Replace the built-in exit function to detach from a tmux session before
-# quitting.
-function exit() {
-  if [ -n "$TMUX" ]; then
-    tmux detach
-  else
-    builtin exit
-  fi
-}
-
 # Attach to an existing tmux session or start a new one.
 if which tmux &>/dev/null; then
   if [ -z "$TMUX" ]; then
