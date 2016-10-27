@@ -57,13 +57,17 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>431 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>488 350 796 473 0 0 1440 877 </string>
+	<string>332 250 918 495 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>191 100 1130 777 0 0 1440 877 </string>
+	<string>43 100 1130 777 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>176 70 570 452 0 0 1440 877 </string>
+	<string>286 41 1130 777 0 0 1440 877 </string>
+	<key>NeverWarnAboutShortLivedSessions_660190AD-E519-4B53-A166-306362AA68F0</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_660190AD-E519-4B53-A166-306362AA68F0_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -709,6 +713,8 @@
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>494780963.48675001</real>
 	<key>PasteTabToStringTabStopSize</key>
@@ -761,7 +767,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-09-05T17:10:29Z</date>
+	<date>2016-10-27T14:35:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
@@ -769,6 +775,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.0.8</string>
+	<string>3.0.10</string>
 </dict>
 </plist>
