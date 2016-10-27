@@ -1,7 +1,0 @@
-# Load the general config file.
-source ~/.tmux.conf
-
-# Change the default prefix binding from Ctrl-b to Ctrl-a.
-unbind C-b
-set -g prefix C-a
-bind C-a send-prefix
