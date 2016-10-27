@@ -12,6 +12,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>CopySelection</key>
+	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>660190AD-E519-4B53-A166-306362AA68F0</string>
 	<key>LoadPrefsFromCustomFolder</key>
@@ -57,11 +59,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>431 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>332 250 918 495 0 0 1440 877 </string>
+	<string>332 211 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>43 100 1130 777 0 0 1440 877 </string>
+	<string>211 51 1130 777 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>286 41 1130 777 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_660190AD-E519-4B53-A166-306362AA68F0</key>
@@ -771,7 +773,7 @@
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1473095552</real>
+	<real>1477606272</real>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
