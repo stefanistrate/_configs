@@ -59,6 +59,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized.git'  " For solarized theme.
 set background=light
 set t_Co=256
+let g:solarized_termcolors=&t_Co
+let g:solarized_termtrans=1
 Plugin 'kien/ctrlp.vim'  " For fuzzy path finder.
 let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:25,results:25'
 Plugin 'octol/vim-cpp-enhanced-highlight'  " For C++11/14 syntax highlighting.
