@@ -16,16 +16,6 @@ function make_symlink {
   ln -s "$src" "$dest"
 }
 
-function install_adobe_photoshop {
-  case "$OSTYPE" in
-    darwin*)
-      make_symlink \
-          adobe-photoshop/WebSharpener_Settings.xml \
-          "/Applications/Adobe Photoshop CC 2014/Presets/Scripts/WebSharpener_Settings.xml"
-      ;;
-  esac
-}
-
 function install_dircolors {
   make_symlink dircolors/dircolors.ansi-dark ~/.dircolors.ansi-dark
   make_symlink dircolors/dircolors.ansi-light ~/.dircolors.ansi-light
@@ -65,8 +55,6 @@ function install_zsh {
 }
 
 
-# TODO(stefan): Re-enable this when the WebSharpener config is revisited.
-# install_adobe_photoshop
 install_dircolors
 install_git
 install_gnome_terminal
