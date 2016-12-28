@@ -18,6 +18,7 @@ set incsearch  " Show the match while typing.
 
 set whichwrap+=<,>,[,]  " Left/right keys navigation.
 set backspace=indent,eol,start  " More powerful backspacing.
+set iskeyword-=_  " Treat underscores as word breaks.
 
 syntax on  " Enable syntax.
 " }}}
