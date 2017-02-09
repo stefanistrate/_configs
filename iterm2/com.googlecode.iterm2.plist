@@ -69,11 +69,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>431 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>416 302 1016 502 0 0 1440 877 </string>
+	<string>344 233 1016 502 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>310 80 1130 777 0 0 1440 877 </string>
+	<string>43 100 1130 777 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>310 0 1130 777 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_660190AD-E519-4B53-A166-306362AA68F0</key>
@@ -359,20 +359,6 @@
 					<key>Text</key>
 					<string>0x1B 0x08</string>
 				</dict>
-				<key>0xf700-0x300000</key>
-				<dict>
-					<key>Action</key>
-					<integer>9</integer>
-					<key>Text</key>
-					<string></string>
-				</dict>
-				<key>0xf701-0x300000</key>
-				<dict>
-					<key>Action</key>
-					<integer>8</integer>
-					<key>Text</key>
-					<string></string>
-				</dict>
 				<key>0xf702-0x280000</key>
 				<dict>
 					<key>Action</key>
@@ -489,6 +475,8 @@
 			<string>/Users/istefan</string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
@@ -555,7 +543,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-31T12:34:29Z</date>
+	<date>2017-02-09T10:23:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
