@@ -67,8 +67,10 @@ zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 zmodload zsh/terminfo
 bindkey "$terminfo[kent]" accept-line  # keypad Enter
-bindkey "$terminfo[kcuu1]" history-beginning-search-backward-end  # UP arrow
-bindkey "$terminfo[kcud1]" history-beginning-search-forward-end   # DOWN arrow
+bindkey "$terminfo[kcuu1]" history-beginning-search-backward-end  # Up arrow
+bindkey "$terminfo[kcud1]" history-beginning-search-forward-end  # Down arrow
+bindkey "^[[1~" beginning-of-line  # Fn + Left arrow
+bindkey "^[[4~" end-of-line  # Fn + Right arrow
 
 # Enable local settings, which override general settings.
 if [ -f ~/.zshrc.local ]; then
