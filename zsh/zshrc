@@ -10,15 +10,6 @@ COMPLETION_WAITING_DOTS=true
 # Use hyphen-insensitive completion. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE=true
 
-# Append history rather than replace it.
-setopt APPEND_HISTORY
-
-# Do not add duplicates of the previous command to the history.
-setopt HIST_IGNORE_DUPS
-
-# Do not add commands starting with a space character to the history.
-setopt HIST_IGNORE_SPACE
-
 # Do not throw any error if a pattern for filename generation has no matches.
 unsetopt NOMATCH
 
