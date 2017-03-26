@@ -13,11 +13,24 @@ HYPHEN_INSENSITIVE=true
 # Do not throw any error if a pattern for filename generation has no matches.
 unsetopt NOMATCH
 
-# Set name and parameters of the theme to load.
+# Set theme and configure prompt segments.
 ZSH_THEME='bullet-train'
+BULLETTRAIN_PROMPT_ORDER=(
+  time
+  status
+  custom
+  dir
+  perl
+  ruby
+  virtualenv
+  go
+  elixir
+  git
+  hg
+  cmd_exec_time
+)
 BULLETTRAIN_TIME_BG=241
 BULLETTRAIN_TIME_FG=254
-BULLETTRAIN_STATUS_SHOW=false
 
 # Set plugins to load.
 plugins=(
