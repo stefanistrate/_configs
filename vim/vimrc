@@ -111,7 +111,7 @@ nnoremap <silent> <Leader>h :set hlsearch!<CR>
 nnoremap <silent> <Leader>p :set paste!<CR>
 " Toggle spell checking.
 nnoremap <silent> <Leader>s :set invspell<CR>
-" Open/Save the default session.
+" Open/Save the local session.
 nnoremap <silent> <Leader><Leader>o :execute 'OpenSession ' . getcwd() . '/' . GetCurrentGitBranch()<CR>
 nnoremap <silent> <Leader><Leader>s :execute 'SaveSession ' . getcwd() . '/' . GetCurrentGitBranch()<CR>
 " Open the corresponding .cc/.h file based on the current file.
