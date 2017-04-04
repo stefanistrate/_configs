@@ -90,7 +90,11 @@ colorscheme solarized  " Enable the solarized theme after plugins are loaded.
 
 " Functions. {{{
 function! GetCurrentGitBranch()
-  return substitute(system("git rev-parse --abbrev-ref HEAD"), '\n', '', '')
+  let l:branch=system("git rev-parse --abbrev-ref HEAD")
+  if v:shell_error
+    return '_'
+  else
+    return substitute(l:branch, '\n', '', '')
 endfunction
 " }}}
 
