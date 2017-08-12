@@ -37,6 +37,10 @@ function install_iterm2 {
   make_symlink iterm2 ~/.iterm2
 }
 
+function install_pip {
+  make_symlink pip ~/.pip
+}
+
 function install_pylint {
   make_symlink pylint/pylintrc ~/.pylintrc
 }
@@ -59,6 +63,7 @@ install_dircolors
 install_git
 install_gnome_terminal
 install_iterm2
+install_pip
 install_pylint
 install_tmux
 install_vim
