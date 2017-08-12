@@ -76,6 +76,15 @@ bindkey "$terminfo[kcud1]" history-beginning-search-forward-end  # Down arrow
 bindkey "^[[1~" beginning-of-line  # Fn + Left arrow
 bindkey "^[[4~" end-of-line  # Fn + Right arrow
 
+# Set up virtualenvwrapper.
+export VIRTUALENVWRAPPER_LAZY_SCRIPT=`which virtualenvwrapper_lazy.sh`
+export VIRTUALENVWRAPPER_PYTHON=`which python3`
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/workspace
+if [ -n "$VIRTUALENVWRAPPER_LAZY_SCRIPT" ]; then
+  source "$VIRTUALENVWRAPPER_LAZY_SCRIPT"
+fi
+
 # Enable local settings, which override general settings.
 if [ -f ~/.zshrc.local ]; then
   source ~/.zshrc.local
