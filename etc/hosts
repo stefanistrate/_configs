@@ -1,0 +1,32 @@
+##################
+# Hosts Database #
+##################
+
+# localhost is used to configure the loopback interface when the system is
+# booting. Do not change this entry.
+127.0.0.1 localhost
+255.255.255.255 broadcasthost
+::1 localhost
+
+# Google ads blocker.
+127.0.0.1 adclick.g.doublecklick.net
+127.0.0.1 googleads.g.doubleclick.net
+127.0.0.1 pagead2.googlesyndication.com
+127.0.0.1 pagead46.l.doubleclick.net
+127.0.0.1 partner.googleadservices.com
+127.0.0.1 pubads.g.doubleclick.net
+127.0.0.1 securepubads.g.doubleclick.net
+127.0.0.1 tpc.googlesyndication.com
+127.0.0.1 video-ad-stats.googlesyndication.com
+
+# Spotify ads blocker.
+127.0.0.1 adeventtracker.spotify.com
+127.0.0.1 ads-fa.spotify.com
+127.0.0.1 analytics.spotify.com
+127.0.0.1 audio2.spotify.com
+127.0.0.1 crashdump.spotify.com
+127.0.0.1 desktop.spotify.com
+127.0.0.1 log.spotify.com
+127.0.0.1 open.spotify.com
+127.0.0.1 spclient.wg.spotify.com
+127.0.0.1 weblb-wg.gslb.spotify.com
