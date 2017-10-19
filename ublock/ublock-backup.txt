@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1508449840465,
+  "timeStamp": 1508451432757,
   "version": "1.14.12",
   "userSettings": {
     "advancedUserEnabled": false,
@@ -10,7 +10,7 @@
     "colorBlindFriendly": false,
     "contextMenuEnabled": true,
     "dynamicFilteringEnabled": false,
-    "externalLists": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt",
+    "externalLists": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt\nhttps://raw.githubusercontent.com/stefanistrate/dotfiles/master/ublock/block-distractions.txt",
     "firewallPaneMinimized": true,
     "hyperlinkAuditingDisabled": true,
     "ignoreGenericCosmeticFilters": false,
@@ -23,6 +23,7 @@
     "webrtcIPAddressHidden": false
   },
   "selectedFilterLists": [
+    "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt",
     "plowe-0",
     "malware-1",
     "malware-0",
@@ -34,7 +35,7 @@
     "ublock-badware",
     "ublock-filters",
     "user-filters",
-    "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt"
+    "https://raw.githubusercontent.com/stefanistrate/dotfiles/master/ublock/block-distractions.txt"
   ],
   "hiddenSettingsString": "assetFetchTimeout 30\nautoUpdateAssetFetchPeriod 120\nautoUpdatePeriod 7\nignoreRedirectFilters false\nignoreScriptInjectFilters false\nmanualUpdateAssetFetchPeriod 2000\npopupFontSize unset\nsuspendTabsUntilReady false\nuserResourcesLocation unset",
   "netWhitelist": "about-scheme\nbehind-the-scene\nchrome-extension-scheme\nchrome-scheme\nmoz-extension-scheme\nopera-scheme\nvivaldi-scheme",
@@ -43,6 +44,9 @@
   "hostnameSwitchesString": "",
   "userFilters": "",
   "filterLists": {
+    "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt": {
+      "off": false
+    },
     "assets/thirdparties/pgl.yoyo.org/as/serverlist": {
       "off": false
     },
@@ -76,7 +80,7 @@
     "assets/user/filters.txt": {
       "off": false
     },
-    "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt": {
+    "https://raw.githubusercontent.com/stefanistrate/dotfiles/master/ublock/block-distractions.txt": {
       "off": false
     },
     "assets/ublock/experimental.txt": {
