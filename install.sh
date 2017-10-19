@@ -41,10 +41,6 @@ function install_pip {
   make_symlink pip ~/.pip
 }
 
-function install_pylint {
-  make_symlink pylint/pylintrc ~/.pylintrc
-}
-
 function install_tmux {
   make_symlink tmux/tmux.conf ~/.tmux.conf
 }
@@ -64,7 +60,6 @@ install_git
 install_gnome_terminal
 install_iterm2
 install_pip
-install_pylint
 install_tmux
 install_vim
 install_zsh
