@@ -1,17 +1,7 @@
 [Adblock]
-! Title: Less Distractions = Better Productivity
-! Version: 20160805
+! Title: Less Distractions
+! Version: 20171019
 ! Expires: 1 days
-! ==============================================================================
-! Other recommended lists to subscribe to:
-! AdBlock custom filters:
-!   https://data.getadblock.com/filters/adblock_custom.txt
-! EasyList:
-!   https://easylist-downloads.adblockplus.org/easylist.txt
-! Malware Domains:
-!   https://easylist-downloads.adblockplus.org/malwaredomains_full.txt
-! Facebook Annoyances Blocker:
-!   https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt
 ! ==============================================================================
 ! Disable Facebook navigation boxes.
 facebook.com###appsNav
