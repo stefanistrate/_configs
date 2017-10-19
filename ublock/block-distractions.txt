@@ -1,0 +1,8 @@
+[Adblock Plus 2.0]
+! Title: Block Distractions
+! Version: 20171019
+! Expires: 7 days
+! ==============================================================================
+! Block Facebook distractions.
+facebook.com###appsNav
+facebook.com###stories_pagelet_rhc
