@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1508451432757,
+  "timeStamp": 1508504283983,
   "version": "1.14.12",
   "userSettings": {
     "advancedUserEnabled": false,
@@ -24,6 +24,7 @@
   },
   "selectedFilterLists": [
     "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt",
+    "https://raw.githubusercontent.com/stefanistrate/dotfiles/master/ublock/block-distractions.txt",
     "plowe-0",
     "malware-1",
     "malware-0",
@@ -34,8 +35,7 @@
     "ublock-privacy",
     "ublock-badware",
     "ublock-filters",
-    "user-filters",
-    "https://raw.githubusercontent.com/stefanistrate/dotfiles/master/ublock/block-distractions.txt"
+    "user-filters"
   ],
   "hiddenSettingsString": "assetFetchTimeout 30\nautoUpdateAssetFetchPeriod 120\nautoUpdatePeriod 7\nignoreRedirectFilters false\nignoreScriptInjectFilters false\nmanualUpdateAssetFetchPeriod 2000\npopupFontSize unset\nsuspendTabsUntilReady false\nuserResourcesLocation unset",
   "netWhitelist": "about-scheme\nbehind-the-scene\nchrome-extension-scheme\nchrome-scheme\nmoz-extension-scheme\nopera-scheme\nvivaldi-scheme",
@@ -45,6 +45,9 @@
   "userFilters": "",
   "filterLists": {
     "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt": {
+      "off": false
+    },
+    "https://raw.githubusercontent.com/stefanistrate/dotfiles/master/ublock/block-distractions.txt": {
       "off": false
     },
     "assets/thirdparties/pgl.yoyo.org/as/serverlist": {
@@ -78,9 +81,6 @@
       "off": false
     },
     "assets/user/filters.txt": {
-      "off": false
-    },
-    "https://raw.githubusercontent.com/stefanistrate/dotfiles/master/ublock/block-distractions.txt": {
       "off": false
     },
     "assets/ublock/experimental.txt": {
