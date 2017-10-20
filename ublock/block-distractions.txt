@@ -1,9 +1,11 @@
 [Adblock Plus 2.0]
-! Title: Block Distractions
-! Version: 20171019
+! Title: Block Distractions by Ștefan
+! Version: 20171020
 ! Expires: 7 days
 ! ==============================================================================
-! Block Facebook distractions.
-facebook.com###appsNav
-facebook.com###left_nav_item_Marketplace
+! Block all sidenav apps except for "Saved".
+facebook.com#?##appsNav .sideNavItem:-abp-has(> a:not([title="Saved"]))
+! Block "Marketplace" in sidenav.
+facebook.com#?#.sideNavItem:-abp-has(> a[data-testid="left_nav_item_Marketplace"])
+! Block "Stories" in right-hand column.
 facebook.com###stories_pagelet_rhc
