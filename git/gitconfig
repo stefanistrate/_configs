@@ -24,6 +24,8 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[include]
+	path = .gitconfig.local
 [merge]
 	conflictstyle = diff3
 	tool = vimdiff
@@ -31,6 +33,3 @@
 	prompt = false
 [push]
 	default = simple
-[user]
-	name = Ștefan Istrate
-	email = stefan.istrate@gmail.com
