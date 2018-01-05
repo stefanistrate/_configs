@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Title: Block Distractions by Ștefan
-! Version: 20171020
+! Title: Block Distractions
+! Version: 20180105
 ! Expires: 7 days
 ! ==============================================================================
 ! Block all sidenav apps except for "Saved".

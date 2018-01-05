@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1513248648392,
-  "version": "1.14.20",
+  "timeStamp": 1515180514706,
+  "version": "1.14.22",
   "userSettings": {
     "advancedUserEnabled": false,
     "alwaysDetachLogger": false,
@@ -38,7 +38,7 @@
     "user-filters"
   ],
   "hiddenSettingsString": "assetFetchTimeout 30\nautoUpdateAssetFetchPeriod 120\nautoUpdatePeriod 7\nignoreRedirectFilters false\nignoreScriptInjectFilters false\nmanualUpdateAssetFetchPeriod 2000\npopupFontSize unset\nsuspendTabsUntilReady false\nuserResourcesLocation unset",
-  "netWhitelist": "adwords.google.com\nanalytics.google.com\nui.bingads.microsoft.com\nwww.facebook.com/stefan.istrate.photo/*\nwww.facebook.com/stefan.istrate.photo$",
+  "netWhitelist": "adwords.google.com\nanalytics.google.com\nbingads.microsoft.com\neditor.wix.com\nfacebook.com/ads/*",
   "dynamicFilteringString": "behind-the-scene * 3p-frame noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "",
