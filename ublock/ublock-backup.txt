@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1515414111641,
-  "version": "1.14.22",
+  "timeStamp": 1515927990882,
+  "version": "1.14.24",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
@@ -39,7 +39,7 @@
   ],
   "hiddenSettingsString": "assetFetchTimeout 30\nautoUpdateAssetFetchPeriod 120\nautoUpdatePeriod 7\nignoreRedirectFilters false\nignoreScriptInjectFilters false\nmanualUpdateAssetFetchPeriod 2000\npopupFontSize unset\nsuspendTabsUntilReady false\nuserResourcesLocation unset",
   "netWhitelist": "adwords.google.com\nanalytics.google.com\nbingads.microsoft.com\neditor.wix.com\nfacebook.com/ads/*",
-  "dynamicFilteringString": "behind-the-scene * 3p-frame noop\nbehind-the-scene * 3p noop\nfilmehd.net * inline-script block",
+  "dynamicFilteringString": "behind-the-scene * 3p-frame noop\nbehind-the-scene * 3p noop\nfilmehd.net * inline-script block\nfilmehd.net fastplay.to * allow\nfilmehd.net ok.ru * allow\nfilmehd.net openload.co * allow\nfilmehd.net streamango.com * allow\nfilmehd.net vidoza.net * allow",
   "urlFilteringString": "",
   "hostnameSwitchesString": "",
   "userFilters": "",
