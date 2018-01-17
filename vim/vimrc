@@ -54,7 +54,7 @@ set runtimepath+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 " Required! Let Vundle manage itself.
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized.git'  " For solarized theme.
 set background=light
