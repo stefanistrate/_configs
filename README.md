@@ -3,7 +3,7 @@ dotfiles
 
 Configuration files for various tools.
 
-Some configs were imported from various other repositories. Credits go to their
+Some configs were imported from external repositories. Credits go to their
 developers.
 
 * https://github.com/seebi/dircolors-solarized
