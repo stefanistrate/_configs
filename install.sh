@@ -1,7 +1,6 @@
 #!/bin/bash
 
-if [ "$#" -ne 1 ] || [[ "$1" != "light" && "$1" != "dark" ]]
-then
+if [ "$#" -ne 1 ] || [[ "$1" != "light" && "$1" != "dark" ]] ; then
   echo "Usage: ./install.sh light|dark"
   exit 1
 fi
@@ -15,7 +14,7 @@ function make_symlink {
   src="$DOTFILES/$1"
   dest="$2"
   rm -rf "$dest.bak"
-  if [[ -e "$dest" ]]; then
+  if [[ -e "$dest" ]] ; then
     mv "$dest" "$dest.bak"
   fi
   mkdir -p "$( dirname "$dest" )"
@@ -33,7 +32,7 @@ function install_git {
 function install_gnome_terminal {
   case "$OSTYPE" in
     linux*)
-      /bin/sh "$DOTFILES/gnome-terminal/solarize.sh" light
+      /bin/sh "$DOTFILES/gnome-terminal/solarize.sh" "$1"
       ;;
   esac
 }
@@ -61,7 +60,10 @@ function install_zsh {
 
 install_dircolors "$1"
 install_git
-install_gnome_terminal
+read -p ">>> Install configs for gnome-terminal? [y/N] " answer
+if [[ "$answer" == "y" || "$answer" == "Y" ]] ; then
+  install_gnome_terminal "$1"
+fi
 install_iterm2
 install_pip
 install_tmux
