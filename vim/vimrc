@@ -68,7 +68,7 @@ Plugin 'sudo.vim'  " For editing files with sudo from non-sudo vim sessions.
 Plugin 'tComment'  " For easier commenting.
 Plugin 'tpope/vim-fugitive'  " For git.
 Plugin 'Valloric/MatchTagAlways'  " For highlighting the enclosing HTML/XML tags.
-if filereadable(expand('~/.vim/bundle/disable.YouCompleteMe')) != 1
+if filereadable(expand('~/.vim/disable.YouCompleteMe')) != 1
   Plugin 'Valloric/YouCompleteMe'  " For code completion.
   let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
   let g:ycm_register_as_syntastic_checker=0
