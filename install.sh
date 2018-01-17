@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -ne 1 ] || [[ "$1" != "light" && "$1" != "dark" ]] ; then
-  echo "Usage: ./install.sh light|dark"
+  echo "Usage: ./install.sh [light | dark]"
   exit 1
 fi
 
