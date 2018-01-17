@@ -43,26 +43,20 @@ plugins=(
 # Load oh-my-zsh.
 source $ZSH/oh-my-zsh.sh
 
-# Set solarized colors for the GNU ls utility and for zsh completion.
+# Set colors for the GNU ls utility and for zsh completion.
 case "$OSTYPE" in
   darwin*)
-    eval `gdircolors ~/.dircolors.ansi-light`
+    eval `gdircolors ~/.dircolors`
+    alias ls='gls -F --color=auto'
     ;;
   linux*)
-    eval `dircolors ~/.dircolors.ansi-light`
+    eval `dircolors ~/.dircolors`
+    alias ls='ls -F --color=auto'
     ;;
 esac
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 # Set additional aliases.
-case "$OSTYPE" in
-  darwin*)
-    alias ls='gls -F --color=auto'
-    ;;
-  linux*)
-    alias ls='ls -F --color=auto'
-    ;;
-esac
 alias ws='cd ~/workspace'
 
 # Map various keys to custom functionality.

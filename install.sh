@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ "$#" -ne 1 ] || [[ "$1" != "light" && "$1" != "dark" ]]
+then
+  echo "Usage: ./install.sh light|dark"
+  exit 1
+fi
+
 set -e
 set -x
 
@@ -17,8 +23,7 @@ function make_symlink {
 }
 
 function install_dircolors {
-  make_symlink dircolors/dircolors.ansi-dark ~/.dircolors.ansi-dark
-  make_symlink dircolors/dircolors.ansi-light ~/.dircolors.ansi-light
+  make_symlink "dircolors/dircolors.ansi-$1" ~/.dircolors
 }
 
 function install_git {
@@ -54,8 +59,7 @@ function install_zsh {
   make_symlink zsh/zshrc ~/.zshrc
 }
 
-
-install_dircolors
+install_dircolors "$1"
 install_git
 install_gnome_terminal
 install_iterm2
