@@ -27,4 +27,5 @@
 127.0.0.1 crashdump.spotify.com
 127.0.0.1 desktop.spotify.com
 127.0.0.1 log.spotify.com
+127.0.0.1 spclient.wg.spotify.com
 127.0.0.1 weblb-wg.gslb.spotify.com
