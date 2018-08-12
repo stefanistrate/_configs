@@ -10,3 +10,5 @@ facebook.com###appsNav li[data-onclick^='[["LeftNavSeeMore"']
 facebook.com##.sideNavItem > a[data-testid="left_nav_item_Marketplace"]
 ! Block "Stories" in right-hand column.
 facebook.com###stories_pagelet_rhc
+! Block Keen tracking on Maptia.
+@@||cloudfront.net/keen-tracking-*.min.js$domain=maptia.com
