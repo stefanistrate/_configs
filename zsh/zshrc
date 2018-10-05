@@ -1,6 +1,6 @@
 # Set global configuration.
 export EDITOR='vim'
-export PATH='/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin'
+export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 export TERM='xterm-256color'
 export ZSH=~/.oh-my-zsh
 
@@ -72,7 +72,7 @@ bindkey "^[[4~" end-of-line  # Fn + Right arrow
 
 # Set up virtualenvwrapper.
 export VIRTUALENVWRAPPER_LAZY_SCRIPT=`which virtualenvwrapper_lazy.sh`
-export VIRTUALENVWRAPPER_PYTHON=`which python3`
+export VIRTUALENVWRAPPER_PYTHON=`which python3.7`
 export WORKON_HOME=~/.virtualenvs
 export PROJECT_HOME=~/workspace
 if [ -n "$VIRTUALENVWRAPPER_LAZY_SCRIPT" ]; then
