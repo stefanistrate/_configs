@@ -9,7 +9,6 @@
 ::1 localhost
 
 # Google ads blocker.
-0.0.0.0 ad.doubleclick.net
 0.0.0.0 adclick.g.doublecklick.net
 0.0.0.0 ade.googlesyndication.com
 0.0.0.0 adservice.google.co.uk
