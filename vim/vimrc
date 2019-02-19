@@ -68,6 +68,7 @@ Plugin 'sudo.vim'  " For editing files with sudo from non-sudo vim sessions.
 Plugin 'tComment'  " For easier commenting.
 Plugin 'tpope/vim-fugitive'  " For git.
 Plugin 'Valloric/MatchTagAlways'  " For highlighting the enclosing HTML/XML tags.
+" TODO: Consider removing YouCompleteMe entirely.
 if filereadable(expand('~/.vim/disable.YouCompleteMe')) != 1
   Plugin 'Valloric/YouCompleteMe'  " For code completion.
   let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
@@ -93,7 +94,11 @@ function! GetCurrentGitBranch()
   if v:shell_error
     return '_'
   else
-    return substitute(l:branch, '\n', '', '')
+    return substitute(l:branch, '\n', '', '') . '.git'
+endfunction
+
+function! GetCurrentSession()
+  return getcwd() . '/' . GetCurrentGitBranch()
 endfunction
 " }}}
 
@@ -102,6 +107,7 @@ let mapleader=','
 
 " Comment/Uncomment lines.
 noremap <silent> <Leader>c :TComment<CR>
+" TODO: Consider removing YouCompleteMe entirely.
 " Jump to the symbol definition / declaration.
 nnoremap <silent> <Leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " Toggle highlight search.
@@ -111,11 +117,8 @@ nnoremap <silent> <Leader>p :set paste!<CR>
 " Toggle spell checking.
 nnoremap <silent> <Leader>s :set invspell<CR>
 " Open/Save the local session.
-nnoremap <silent> <Leader><Leader>o :execute 'OpenSession ' . getcwd() . '/' . GetCurrentGitBranch()<CR>
-nnoremap <silent> <Leader><Leader>s :execute 'SaveSession ' . getcwd() . '/' . GetCurrentGitBranch()<CR>
-" Open the corresponding .cc/.h file based on the current file.
-nnoremap <silent> <Leader><Leader>cc :vsplit %:r.cc<CR>
-nnoremap <silent> <Leader><Leader>h :vsplit %:r.h<CR>
+nnoremap <silent> <Leader><Leader>o :execute 'OpenSession ' . GetCurrentSession()<CR>
+nnoremap <silent> <Leader><Leader>s :execute 'SaveSession ' . GetCurrentSession()<CR>
 " }}}
 
 " Local settings to overwrite general settings. {{{
