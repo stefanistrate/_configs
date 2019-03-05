@@ -41,10 +41,6 @@ function install_iterm2 {
   make_symlink iterm2 ~/.iterm2
 }
 
-function install_pip {
-  make_symlink pip ~/.pip
-}
-
 function install_tmux {
   make_symlink tmux/tmux.conf ~/.tmux.conf
 }
@@ -65,7 +61,6 @@ if [[ "$answer" == "y" || "$answer" == "Y" ]] ; then
   install_gnome_terminal "$1"
 fi
 install_iterm2
-install_pip
 install_tmux
 install_vim
 install_zsh
