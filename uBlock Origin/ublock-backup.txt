@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1515927990882,
-  "version": "1.14.24",
+  "timeStamp": 1580237264585,
+  "version": "1.24.2",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
@@ -10,7 +10,7 @@
     "colorBlindFriendly": false,
     "contextMenuEnabled": true,
     "dynamicFilteringEnabled": true,
-    "externalLists": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt\nhttps://raw.githubusercontent.com/stefanistrate/dotfiles/master/ublock/block-distractions.txt",
+    "externalLists": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt\nhttps://raw.githubusercontent.com/stefanistrate/dotfiles/master/uBlock%20Origin/block-distractions.txt",
     "firewallPaneMinimized": true,
     "hyperlinkAuditingDisabled": true,
     "ignoreGenericCosmeticFilters": false,
@@ -23,68 +23,59 @@
     "webrtcIPAddressHidden": false
   },
   "selectedFilterLists": [
-    "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt",
-    "https://raw.githubusercontent.com/stefanistrate/dotfiles/master/ublock/block-distractions.txt",
-    "plowe-0",
-    "malware-1",
-    "malware-0",
-    "easyprivacy",
-    "easylist",
-    "ublock-unbreak",
-    "ublock-abuse",
-    "ublock-privacy",
-    "ublock-badware",
+    "user-filters",
     "ublock-filters",
-    "user-filters"
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-abuse",
+    "ublock-unbreak",
+    "easylist",
+    "easyprivacy",
+    "malware-0",
+    "malware-1",
+    "plowe-0",
+    "https://raw.githubusercontent.com/stefanistrate/dotfiles/master/uBlock%20Origin/block-distractions.txt",
+    "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt"
   ],
-  "hiddenSettingsString": "assetFetchTimeout 30\nautoUpdateAssetFetchPeriod 120\nautoUpdatePeriod 7\nignoreRedirectFilters false\nignoreScriptInjectFilters false\nmanualUpdateAssetFetchPeriod 2000\npopupFontSize unset\nsuspendTabsUntilReady false\nuserResourcesLocation unset",
+  "hiddenSettings": {
+    "allowGenericProceduralFilters": false,
+    "assetFetchTimeout": 30,
+    "autoCommentFilterTemplate": "{{date}} {{origin}}",
+    "autoUpdateAssetFetchPeriod": 120,
+    "autoUpdateDelayAfterLaunch": 180,
+    "autoUpdatePeriod": 7,
+    "blockingProfiles": "11111/#F00 11011/#C0F 11001/#00F 00001",
+    "cacheStorageAPI": "unset",
+    "cacheStorageCompression": true,
+    "cacheControlForFirefox1376932": "no-cache, no-store, must-revalidate",
+    "consoleLogLevel": "unset",
+    "debugScriptlets": false,
+    "debugScriptletInjector": false,
+    "disableWebAssembly": false,
+    "extensionUpdateForceReload": false,
+    "ignoreRedirectFilters": false,
+    "ignoreScriptInjectFilters": false,
+    "filterAuthorMode": false,
+    "loggerPopupType": "popup",
+    "manualUpdateAssetFetchPeriod": 2000,
+    "popupFontSize": "unset",
+    "requestJournalProcessPeriod": 1000,
+    "selfieAfter": 3,
+    "strictBlockingBypassDuration": 120,
+    "suspendTabsUntilReady": "false",
+    "updateAssetBypassBrowserCache": false,
+    "userResourcesLocation": "unset"
+  },
+  "whitelist": [
+    "adwords.google.com",
+    "analytics.google.com",
+    "bingads.microsoft.com",
+    "editor.wix.com",
+    "facebook.com/ads/*"
+  ],
   "netWhitelist": "adwords.google.com\nanalytics.google.com\nbingads.microsoft.com\neditor.wix.com\nfacebook.com/ads/*",
-  "dynamicFilteringString": "behind-the-scene * 3p-frame noop\nbehind-the-scene * 3p noop\nfilmehd.net * inline-script block\nfilmehd.net fastplay.to * allow\nfilmehd.net ok.ru * allow\nfilmehd.net openload.co * allow\nfilmehd.net streamango.com * allow\nfilmehd.net vidoza.net * allow",
+  "dynamicFilteringString": "behind-the-scene * 3p-frame noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "",
-  "userFilters": "",
-  "filterLists": {
-    "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt": {
-      "off": false
-    },
-    "https://raw.githubusercontent.com/stefanistrate/dotfiles/master/ublock/block-distractions.txt": {
-      "off": false
-    },
-    "assets/thirdparties/pgl.yoyo.org/as/serverlist": {
-      "off": false
-    },
-    "assets/thirdparties/mirror1.malwaredomains.com/files/justdomains": {
-      "off": false
-    },
-    "assets/thirdparties/www.malwaredomainlist.com/hostslist/hosts.txt": {
-      "off": false
-    },
-    "assets/thirdparties/easylist-downloads.adblockplus.org/easyprivacy.txt": {
-      "off": false
-    },
-    "assets/thirdparties/easylist-downloads.adblockplus.org/easylist.txt": {
-      "off": false
-    },
-    "assets/ublock/unbreak.txt": {
-      "off": false
-    },
-    "ublock-abuse": {
-      "off": false
-    },
-    "assets/ublock/privacy.txt": {
-      "off": false
-    },
-    "assets/ublock/badware.txt": {
-      "off": false
-    },
-    "assets/ublock/filters.txt": {
-      "off": false
-    },
-    "assets/user/filters.txt": {
-      "off": false
-    },
-    "assets/ublock/experimental.txt": {
-      "off": true
-    }
-  }
+  "userFilters": ""
 }
