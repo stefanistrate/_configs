@@ -26,19 +26,19 @@ function install_dircolors {
 }
 
 function install_git {
-  make_symlink git/gitconfig ~/.gitconfig
+  make_symlink Git/gitconfig ~/.gitconfig
 }
 
 function install_gnome_terminal {
   case "$OSTYPE" in
     linux*)
-      /bin/sh "$DOTFILES/gnome-terminal/solarize.sh" "$1"
+      /bin/sh "$DOTFILES/GNOME Terminal/solarize.sh" "$1"
       ;;
   esac
 }
 
 function install_iterm2 {
-  make_symlink iterm2 ~/.iterm2
+  make_symlink iTerm2 ~/.iterm2
 }
 
 function install_tmux {
@@ -46,17 +46,17 @@ function install_tmux {
 }
 
 function install_vim {
-  make_symlink vim/vimrc ~/.vimrc
-  make_symlink vim/after ~/.vim/after
+  make_symlink Vim/vimrc ~/.vimrc
+  make_symlink Vim/after ~/.vim/after
 }
 
 function install_zsh {
-  make_symlink zsh/zshrc ~/.zshrc
+  make_symlink Zsh/zshrc ~/.zshrc
 }
 
 install_dircolors "$1"
 install_git
-read -p ">>> Install configs for gnome-terminal? [y/N] " answer
+read -p ">>> Install configs for GNOME Terminal? [y/N] " answer
 if [[ "$answer" == "y" || "$answer" == "Y" ]] ; then
   install_gnome_terminal "$1"
 fi
