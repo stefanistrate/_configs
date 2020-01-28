@@ -1,0 +1,1 @@
+../../WIN/ImageMagick/LICENSE.txt
