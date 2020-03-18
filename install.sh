@@ -21,6 +21,16 @@ function make_symlink {
   ln -s "$src" "$dest"
 }
 
+function install_atom {
+  make_symlink Atom/config.cson ~/.atom/config.cson
+  make_symlink Atom/github.cson ~/.atom/github.cson
+  make_symlink Atom/init.coffee ~/.atom/init.coffee
+  make_symlink Atom/keymap.cson ~/.atom/keymap.cson
+  make_symlink Atom/kite-config.json ~/.atom/kite-config.json
+  make_symlink Atom/snippets.cson ~/.atom/snippets.cson
+  make_symlink Atom/styles.less ~/.atom/styles.less
+}
+
 function install_dircolors {
   make_symlink "dircolors/dircolors.ansi-$1" ~/.dircolors
 }
@@ -54,6 +64,7 @@ function install_zsh {
   make_symlink zsh/zshrc ~/.zshrc
 }
 
+install_atom
 install_dircolors "$1"
 install_git
 read -p ">>> Install configs for GNOME Terminal? [y/N] " answer

@@ -1,0 +1,19 @@
+"*":
+  core:
+    disabledPackages: [
+      "atom-beautify"
+    ]
+    telemetryConsent: "no"
+    useTreeSitterParsers: false
+  editor:
+    fontSize: 13
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "898a6da8-1036-4c89-81f7-06228adf326d"
+  kite:
+    showWelcomeNotificationOnStartup: false
+  "python-yapf":
+    yapfPath: "/usr/local/bin/yapf"
+    yapfStyle: "google"
+  welcome:
+    showOnStartup: false
