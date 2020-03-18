@@ -26,7 +26,7 @@ function install_dircolors {
 }
 
 function install_git {
-  make_symlink Git/gitconfig ~/.gitconfig
+  make_symlink git/gitconfig ~/.gitconfig
 }
 
 function install_gnome_terminal {
@@ -46,12 +46,12 @@ function install_tmux {
 }
 
 function install_vim {
-  make_symlink Vim/vimrc ~/.vimrc
-  make_symlink Vim/after ~/.vim/after
+  make_symlink vim/vimrc ~/.vimrc
+  make_symlink vim/after ~/.vim/after
 }
 
 function install_zsh {
-  make_symlink Zsh/zshrc ~/.zshrc
+  make_symlink zsh/zshrc ~/.zshrc
 }
 
 install_dircolors "$1"

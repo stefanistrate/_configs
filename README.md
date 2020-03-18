@@ -21,5 +21,5 @@ from
 [here](https://github.com/seebi/dircolors-solarized).
 * `GNOME Terminal/solarize.sh` was imported from
 [here](https://gist.github.com/codeforkjeff/1397104).
-* `Vim/after/indent/python.vim` was imported from
+* `vim/after/indent/python.vim` was imported from
 [here](https://github.com/google/styleguide).
