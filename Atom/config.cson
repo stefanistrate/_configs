@@ -15,5 +15,7 @@
   "python-yapf":
     yapfPath: "/usr/local/bin/yapf"
     yapfStyle: "google"
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
