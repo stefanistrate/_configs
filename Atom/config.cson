@@ -4,6 +4,10 @@
       "atom-beautify"
     ]
     telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "solarized-light-syntax"
+    ]
     useTreeSitterParsers: false
   editor:
     fontSize: 13
