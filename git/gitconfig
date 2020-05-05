@@ -18,6 +18,7 @@
 	ui = true
 [core]
 	editor = vim
+	hooksPath = .githooks
 [credential]
 	helper = "`case \"$OSTYPE\" in darwin*) echo \"osxkeychain\" ;; *) echo \"cache\" ;; esac`"
 [diff]
