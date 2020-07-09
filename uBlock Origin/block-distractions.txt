@@ -1,5 +1,0 @@
-[Adblock Plus 2.0]
-! Title: Block Distractions
-! Version: 20200708
-! Expires: 7 days
-! ==============================================================================
