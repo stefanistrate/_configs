@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1594295875604,
+  "timeStamp": 1595861330840,
   "version": "1.27.10",
   "userSettings": {
     "advancedUserEnabled": true,
@@ -38,11 +38,8 @@
     "fanboy-enhanced",
     "urlhaus-1",
     "spam404-0",
-    "adguard-annoyance",
     "adguard-social",
     "fanboy-thirdparty_social",
-    "fanboy-cookiemonster",
-    "fanboy-annoyance",
     "fanboy-social",
     "ublock-annoyances",
     "dpollock-0",
@@ -93,13 +90,21 @@
     "userResourcesLocation": "unset"
   },
   "whitelist": [
+    "about-scheme",
     "adwords.google.com",
     "analytics.google.com",
     "bingads.microsoft.com",
+    "chrome-extension-scheme",
+    "chrome-scheme",
+    "edge-scheme",
     "editor.wix.com",
-    "facebook.com/ads/*"
+    "facebook.com/ads/*",
+    "moz-extension-scheme",
+    "opera-scheme",
+    "vivaldi-scheme",
+    "wyciwyg-scheme"
   ],
-  "netWhitelist": "adwords.google.com\nanalytics.google.com\nbingads.microsoft.com\neditor.wix.com\nfacebook.com/ads/*",
+  "netWhitelist": "about-scheme\nadwords.google.com\nanalytics.google.com\nbingads.microsoft.com\nchrome-extension-scheme\nchrome-scheme\nedge-scheme\neditor.wix.com\nfacebook.com/ads/*\nmoz-extension-scheme\nopera-scheme\nvivaldi-scheme\nwyciwyg-scheme",
   "dynamicFilteringString": "behind-the-scene * 3p-frame noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "",
