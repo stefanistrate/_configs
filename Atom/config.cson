@@ -16,7 +16,8 @@
     userId: "898a6da8-1036-4c89-81f7-06228adf326d"
   kite:
     showWelcomeNotificationOnStartup: false
-  "markdown-preview": {}
+  "markdown-preview":
+    useGitHubStyle: true
   "python-yapf":
     yapfPath: "/usr/local/bin/yapf"
     yapfStyle: "google"
