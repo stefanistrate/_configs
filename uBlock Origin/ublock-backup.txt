@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1595861330840,
-  "version": "1.27.10",
+  "timeStamp": 1599557182607,
+  "version": "1.29.2",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
@@ -80,12 +80,14 @@
     "popupFontSize": "unset",
     "popupPanelDisabledSections": 0,
     "popupPanelLockedSections": 0,
+    "popupPanelHeightMode": 0,
     "requestJournalProcessPeriod": 1000,
     "selfieAfter": 3,
     "strictBlockingBypassDuration": 120,
     "suspendTabsUntilReady": "false",
     "uiPopupConfig": "undocumented",
     "uiFlavor": "unset",
+    "uiStyles": "unset",
     "updateAssetBypassBrowserCache": false,
     "userResourcesLocation": "unset"
   },
@@ -108,5 +110,5 @@
   "dynamicFilteringString": "behind-the-scene * 3p-frame noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "",
-  "userFilters": ""
+  "userFilters": "facebook.com##div[data-pagelet*=\"FeedUnit\"]:has(span[dir=\"auto\"]:has-text(Suggested for You))\n"
 }
