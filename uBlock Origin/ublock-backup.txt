@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1599557182607,
+  "timeStamp": 1600102224661,
   "version": "1.29.2",
   "userSettings": {
     "advancedUserEnabled": true,
@@ -38,9 +38,7 @@
     "fanboy-enhanced",
     "urlhaus-1",
     "spam404-0",
-    "adguard-social",
     "fanboy-thirdparty_social",
-    "fanboy-social",
     "ublock-annoyances",
     "dpollock-0",
     "mvps-0",
@@ -110,5 +108,5 @@
   "dynamicFilteringString": "behind-the-scene * 3p-frame noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "",
-  "userFilters": "facebook.com##div[data-pagelet*=\"FeedUnit\"]:has(span[dir=\"auto\"]:has-text(Suggested for You))\n"
+  "userFilters": ""
 }
