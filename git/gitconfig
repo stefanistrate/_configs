@@ -27,12 +27,14 @@
 	prompt = false
 [include]
 	path = .gitconfig.local
+[init]
+	defaultBranch = main
 [merge]
 	conflictstyle = diff3
 	tool = vimdiff
 [mergetool]
 	prompt = false
-[push]
-	default = simple
 [pull]
 	rebase = false
+[push]
+	default = simple
