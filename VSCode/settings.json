@@ -1,0 +1,17 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 60000,
+    "workbench.colorTheme": "Solarized Light",
+    "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
+    "terminal.integrated.automationShell.osx": "",
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "settingsSync.ignoredSettings": [
+        "-python.defaultInterpreterPath"
+    ],
+    "python.pythonPath": "/usr/local/bin/python3",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "window.zoomLevel": 0
+}

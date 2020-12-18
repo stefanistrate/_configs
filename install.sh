@@ -64,6 +64,10 @@ function install_zsh {
   make_symlink zsh/zshrc ~/.zshrc
 }
 
+function install_vscode {
+  make_symlink VSCode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+}
+
 install_atom
 install_dircolors "$1"
 install_git
@@ -74,4 +78,5 @@ fi
 install_iterm2
 install_tmux
 install_vim
+install_vscode
 install_zsh
