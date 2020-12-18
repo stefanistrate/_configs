@@ -1,7 +1,7 @@
 {
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 60000,
-    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorTheme": "Solarized Autumn",
     "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
     "terminal.integrated.automationShell.osx": "",
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
