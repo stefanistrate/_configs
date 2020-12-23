@@ -13,5 +13,13 @@
     "python.pythonPath": "/usr/local/bin/python3",
     "git.confirmSync": false,
     "git.autofetch": true,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "markdown.preview.fontSize": 16,
+    "markdown.extension.math.enabled": false
 }
