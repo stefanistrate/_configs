@@ -21,5 +21,8 @@
         }
     ],
     "markdown.preview.fontSize": 16,
-    "markdown.extension.math.enabled": false
+    "markdown.extension.math.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "explorer.confirmDelete": false
 }
