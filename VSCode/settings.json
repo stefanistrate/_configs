@@ -14,15 +14,15 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "window.zoomLevel": 0,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": [],
     "markdown.preview.fontSize": 16,
     "markdown.extension.math.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "editor.rulers": [
+        80
+    ],
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "yapf"
 }
