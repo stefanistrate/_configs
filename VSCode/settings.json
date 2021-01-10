@@ -24,5 +24,6 @@
         80
     ],
     "editor.formatOnSave": true,
-    "python.formatting.provider": "yapf"
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfPath": "/usr/local/bin/yapf"
 }
