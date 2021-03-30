@@ -38,3 +38,7 @@
 	rebase = false
 [push]
 	default = simple
+[user]
+	name = Ștefan Istrate
+	email = stefan.istrate@gmail.com
+	signingkey = C939FC83AE13E0C5
