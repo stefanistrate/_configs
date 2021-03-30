@@ -16,6 +16,8 @@
 	who = shortlog -s --
 [color]
 	ui = true
+[commit]
+	gpgsign = true
 [core]
 	editor = vim
 	hooksPath = .githooks
