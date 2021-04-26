@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1619461253177,
+  "timeStamp": 1619466951693,
   "version": "1.34.0",
   "userSettings": {
     "advancedUserEnabled": true,
@@ -63,5 +63,5 @@
   "dynamicFilteringString": "behind-the-scene * 3p-frame noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "",
-  "userFilters": ""
+  "userFilters": "@@/favicon.ico$domain=vimeo.com\n"
 }
