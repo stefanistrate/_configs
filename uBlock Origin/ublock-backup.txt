@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1616845142102,
-  "version": "1.33.2",
+  "timeStamp": 1619461253177,
+  "version": "1.34.0",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
@@ -12,7 +12,6 @@
     "popupPanelSections": 63
   },
   "selectedFilterLists": [
-    "https://www.fanboy.co.nz/enhancedstats.txt",
     "user-filters",
     "ublock-filters",
     "ublock-badware",
@@ -24,7 +23,6 @@
     "easylist",
     "adguard-spyware",
     "easyprivacy",
-    "fanboy-enhanced",
     "urlhaus-1",
     "spam404-0",
     "fanboy-thirdparty_social",
@@ -32,7 +30,8 @@
     "dpollock-0",
     "mvps-0",
     "plowe-0",
-    "ROU-1"
+    "ROU-1",
+    "https://www.fanboy.co.nz/enhancedstats.txt"
   ],
   "hiddenSettings": {
     "autoUpdatePeriod": 7,
