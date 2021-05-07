@@ -1,29 +1,36 @@
 {
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 60000,
-    "workbench.colorTheme": "Solarized Autumn",
-    "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
-    "terminal.integrated.automationShell.osx": "",
-    "python.defaultInterpreterPath": "/usr/local/bin/python3",
-    "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.drawBoldTextInBrightColors": false,
-    "settingsSync.ignoredSettings": [
-        "-python.defaultInterpreterPath"
-    ],
-    "python.pythonPath": "/usr/local/bin/python3",
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "window.zoomLevel": 0,
-    "workbench.editorAssociations": [],
-    "markdown.preview.fontSize": 16,
-    "markdown.extension.math.enabled": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
-    "explorer.confirmDelete": false,
+    "editor.formatOnSave": true,
     "editor.rulers": [
         80
     ],
-    "editor.formatOnSave": true,
+    "explorer.confirmDelete": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 60000,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.path": "/usr/local/bin/git",
+    "markdown.extension.math.enabled": false,
+    "markdown.preview.fontSize": 16,
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.formatting.provider": "yapf",
-    "python.formatting.yapfPath": "/usr/local/bin/yapf"
+    "python.formatting.yapfPath": "/usr/local/bin/yapf",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "settingsSync.ignoredSettings": [
+        "-python.defaultInterpreterPath"
+    ],
+    "terminal.integrated.automationShell.osx": "",
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
+    "terminal.integrated.rendererType": "dom",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Solarized Autumn",
+    "workbench.editorAssociations": [
+        {
+            "filenamePattern": "*.ipynb",
+            "viewType": "jupyter.notebook.ipynb"
+        }
+    ],
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "git.enableCommitSigning": true
 }
