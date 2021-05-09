@@ -8,6 +8,7 @@
     "files.autoSaveDelay": 60000,
     "git.autofetch": true,
     "git.confirmSync": false,
+    "git.enableCommitSigning": true,
     "git.path": "/usr/local/bin/git",
     "markdown.extension.math.enabled": false,
     "markdown.preview.fontSize": 16,
@@ -31,6 +32,5 @@
         }
     ],
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
-    "git.enableCommitSigning": true
+    "workbench.sideBar.location": "right"
 }
