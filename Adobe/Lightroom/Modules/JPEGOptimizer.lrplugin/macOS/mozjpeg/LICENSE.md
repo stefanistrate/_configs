@@ -1,1 +1,0 @@
-../../WIN/mozjpeg/LICENSE.md

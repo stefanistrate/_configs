@@ -1,1 +1,0 @@
-../../WIN/ImageMagick/README.txt
