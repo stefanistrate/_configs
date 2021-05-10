@@ -13,11 +13,11 @@ A couple of configs in this repository were imported or adapted from other
 sources. Many thanks to their original developers!
 
 * [`managed/dircolors/dircolors.ansi-dark`](managed/dircolors/dircolors.ansi-dark)
-  came from
+  was sourced from
   [here](https://github.com/seebi/dircolors-solarized/blob/master/dircolors.ansi-dark).
 * [`managed/dircolors/dircolors.ansi-light`](managed/dircolors/dircolors.ansi-light)
-  came from
+  was sourced from
   [here](https://github.com/seebi/dircolors-solarized/blob/master/dircolors.ansi-light).
 * [`managed/vim/after/indent/python.vim`](managed/vim/after/indent/python.vim)
-  came from
+  was sourced from
   [here](https://github.com/google/styleguide/blob/gh-pages/google_python_style.vim).
