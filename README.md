@@ -1,14 +1,23 @@
 dotfiles
 ================================================================================
 
-Configuration files for various tools.
+Settings for various tools I use frequently.
 
-Some configs were imported from external locations. Credit goes to their
-developers. Many thanks!
+[`managed/*`](managed) config files can be installed and updated via the
+[`install`](install) script.
 
-* `dircolors/dircolors.ansi-dark` was imported from
-[here](https://github.com/seebi/dircolors-solarized).
-* `dircolors/dircolors.ansi-light` was imported from
-[here](https://github.com/seebi/dircolors-solarized).
-* `vim/after/indent/python.vim` was imported from
-[here](https://github.com/google/styleguide).
+[`unmanaged/*`](unmanaged) config files have to be loaded manually into their
+corresponding tools.
+
+A couple of configs in this repository were imported or adapted from other
+sources. Many thanks to their original developers!
+
+* [`managed/dircolors/dircolors.ansi-dark`](managed/dircolors/dircolors.ansi-dark)
+  came from
+  [here](https://github.com/seebi/dircolors-solarized/blob/master/dircolors.ansi-dark).
+* [`managed/dircolors/dircolors.ansi-light`](managed/dircolors/dircolors.ansi-light)
+  came from
+  [here](https://github.com/seebi/dircolors-solarized/blob/master/dircolors.ansi-light).
+* [`managed/vim/after/indent/python.vim`](managed/vim/after/indent/python.vim)
+  came from
+  [here](https://github.com/google/styleguide/blob/gh-pages/google_python_style.vim).
