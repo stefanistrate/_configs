@@ -9,7 +9,7 @@ Settings for various tools I use frequently.
 [`unmanaged/*`](unmanaged) config files have to be loaded manually into their
 corresponding tools.
 
-A couple of configs in this repository were imported or adapted from other
+A couple of files in this repository were imported or adapted from other
 sources. Many thanks to their original developers!
 
 * [`managed/dircolors/dircolors.ansi-dark`](managed/dircolors/dircolors.ansi-dark)
