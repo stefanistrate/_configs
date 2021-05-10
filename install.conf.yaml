@@ -1,0 +1,26 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.dircolors: managed/dircolors/dircolors.ansi-light
+
+    ~/.gitconfig: managed/git/gitconfig
+
+    ~/.iterm2:
+      if: '[ `uname` = Darwin ]'
+      path: managed/iTerm2
+
+    ~/.tmux.conf: managed/tmux/tmux.conf
+
+    ~/.vim/after: managed/vim/after
+    ~/.vimrc: managed/vim/vimrc
+
+    ~/Library/Application Support/Code/User/settings.json:
+      if: '[ `uname` = Darwin ]'
+      path: managed/VSCode/settings.json
+
+    ~/.zshrc: managed/zsh/zshrc
