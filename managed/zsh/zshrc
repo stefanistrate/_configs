@@ -59,7 +59,9 @@ esac
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 # Set additional aliases.
+alias ds='cd ~/datastore'
 alias ws='cd ~/workspace'
+alias activate='source .env/bin/activate'
 
 # Map various keys to custom functionality.
 autoload history-search-end
