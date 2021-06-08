@@ -62,6 +62,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 alias ds='cd ~/datastore'
 alias ws='cd ~/workspace'
 alias activate='source .env/bin/activate'
+alias mkenv='python3 -m venv .env'
 
 # Map various keys to custom functionality.
 autoload history-search-end
