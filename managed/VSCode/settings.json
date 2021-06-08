@@ -33,5 +33,6 @@
         }
     ],
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "python.analysis.typeCheckingMode": "basic"
 }
