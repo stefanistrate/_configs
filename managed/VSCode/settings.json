@@ -13,9 +13,12 @@
     "git.path": "/usr/local/bin/git",
     "markdown.extension.math.enabled": false,
     "markdown.preview.fontSize": 16,
+    "python.analysis.typeCheckingMode": "basic",
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.formatting.provider": "yapf",
     "python.formatting.yapfPath": "/usr/local/bin/yapf",
+    "python.languageServer": "Jedi",
+    "python.linting.pylintPath": "/usr/local/bin/pylint",
     "python.pythonPath": "/usr/local/bin/python3",
     "settingsSync.ignoredSettings": [
         "-python.defaultInterpreterPath"
@@ -26,13 +29,9 @@
     "terminal.integrated.rendererType": "dom",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Solarized Autumn",
-    "workbench.editorAssociations": [
-        {
-            "filenamePattern": "*.ipynb",
-            "viewType": "jupyter.notebook.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
-    "python.analysis.typeCheckingMode": "basic"
+    "workbench.sideBar.location": "right"
 }
